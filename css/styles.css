@@ -95,6 +95,16 @@ body {
     background: var(--color-background);
 }
 
+.banner-container {
+    min-height: 100vh;
+    display: flex;
+}
+
+.banner {
+    margin: auto;
+    padding: 1.8vh;
+}
+
 .tips {
     background: url(https://eugene-serb.github.io/img/tips.png) repeat 0 0;
 }
