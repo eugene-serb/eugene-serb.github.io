@@ -8,12 +8,12 @@
     --color-link-hover: #3333FF;
     --color-header: #000000;
 
-    --size-primary: calc((100vh + 100vw) * 0.004 + 18px);
+    --size-primary: 16px;
 }
 
 html {
     font-family: 'Roboto', sans-serif;
-    font-size: calc(var(--size-primary) / 2);
+    font-size: var(--size-primary);
     line-height: 1.382em;
     direction: ltr;
 }
@@ -109,7 +109,7 @@ body {
 
 .banner {
     margin: auto;
-    padding: 1.8vh;
+    padding: calc(var(--size-primary) / 2);
 }
 
 .tips {
@@ -126,7 +126,7 @@ body {
 }
 
     .flex-row li {
-        padding: 0 0.9vh 0 0;
+        padding: 0 calc(var(--size-primary) / 2) 0 0;
     }
 
         .flex-row li:last-child {
@@ -153,7 +153,7 @@ body {
 }
 
 .rep-links {
-    margin-block-start: 0.9vh;
+    margin-block-start: calc(var(--size-primary) / 2);
 }
 
 .info > img {
