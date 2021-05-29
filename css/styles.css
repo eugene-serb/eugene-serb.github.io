@@ -8,12 +8,12 @@
     --color-link-hover: #3333FF;
     --color-header: #000000;
 
-    --size-primary: 16px;
+    --size-primary: 32px;
 }
 
 html {
     font-family: 'Roboto', sans-serif;
-    font-size: var(--size-primary);
+    font-size: calc(var(--size-primary) / 2) ;
     line-height: 1.382em;
     direction: ltr;
 }
@@ -28,7 +28,7 @@ html {
 h1, h2, h3, h4, h5, h6 {
     color: var(--color-header);
     font-weight: 700;
-    margin-block-end: 0.382em;
+    margin-block-start: 0.382em;
     margin-block-end: 0.618em;
     line-height: 1.618em;
 }
@@ -158,6 +158,12 @@ body {
 
 .info > img {
     width: 100%;
+    margin: auto;
+}
+
+#repositories > div > .grid-container > li > p {
+    max-height: calc(var(--size-primary) * 2);
+    overflow-y: hidden;
 }
 
 #services {
