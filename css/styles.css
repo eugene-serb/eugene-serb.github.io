@@ -8,12 +8,13 @@
     --color-link-hover: #3333FF;
     --color-header: #000000;
 
-    --size-primary: calc((100vh + 100vw) * 0.005 + 16px);
+    --size-primary: calc((50vh + 100vw) * 0.005 + 18px);
 }
 
 html {
     font-family: 'Roboto', sans-serif;
     font-size: calc(var(--size-primary) / 2);
+    line-height: 1.382em;
     direction: ltr;
 }
 
@@ -27,7 +28,9 @@ html {
 h1, h2, h3, h4, h5, h6 {
     color: var(--color-header);
     font-weight: 700;
-    margin-block-end: 0.9vh;
+    margin-block-end: 0.382em;
+    margin-block-end: 0.618em;
+    line-height: 1.618em;
 }
 
 h1 {
@@ -155,6 +158,10 @@ body {
 
 .info > img {
     width: 100%;
+}
+
+#services {
+    margin-block-end: 1.618em;
 }
 
 @media only screen and (min-width: 320px) {
