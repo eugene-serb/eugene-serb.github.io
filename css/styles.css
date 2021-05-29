@@ -8,12 +8,12 @@
     --color-link-hover: #3333FF;
     --color-header: #000000;
 
-    --size-primary: 3.6vh;
+    --size-primary: 3.6vw;
 }
 
 @media (orientation: landscape) {
     :root {
-        --size-primary: 3.6vw;
+        --size-primary: 3.6vh;
     }
 }
 
