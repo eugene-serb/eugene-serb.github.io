@@ -8,7 +8,7 @@
     --color-link-hover: #3333FF;
     --color-header: #000000;
 
-    --size-primary: calc((50vh + 100vw) * 0.005 + 18px);
+    --size-primary: calc((100vh + 100vw) * 0.004 + 18px);
 }
 
 html {
