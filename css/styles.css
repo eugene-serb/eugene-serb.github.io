@@ -8,7 +8,7 @@
     --color-link-hover: #3333FF;
     --color-header: #000000;
 
-    --size-primary: calc((3.6vh + 3.6vw) / 2);
+    --size-primary: 3.6vh;
 }
 
 *, ::after, ::before {
@@ -149,6 +149,10 @@ body {
     margin-block-start: 0.9vh;
 }
 
+.info > img {
+    width: 100%;
+}
+
 @media only screen and (min-width: 320px) {
 
     .grid-container {
@@ -164,8 +168,6 @@ body {
     }
 
         .info > img {
-            width: 100%;
-            height: 100%;
             grid-column: 1 / 2;
         }
 
