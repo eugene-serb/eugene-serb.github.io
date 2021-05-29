@@ -11,6 +11,12 @@
     --size-primary: 3.6vh;
 }
 
+@media (orientation: landscape) {
+    :root {
+        --size-primary: 3.6vw;
+    }
+}
+
 *, ::after, ::before {
     margin: 0;
     padding: 0;
