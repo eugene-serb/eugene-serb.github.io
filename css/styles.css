@@ -162,7 +162,7 @@ body {
 }
 
 #repositories > div > .grid-container > li > p {
-    max-height: calc(var(--size-primary) * 2);
+    height: calc(var(--size-primary) * 2);
     overflow-y: hidden;
 }
 
