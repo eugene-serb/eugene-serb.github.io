@@ -156,6 +156,10 @@ ul {
     margin-block-start: var(--size-primary);
 }
 
+    .rep-links a {
+        text-decoration: underline;
+    }
+
 .info > img {
     width: 100%;
     margin: auto;
