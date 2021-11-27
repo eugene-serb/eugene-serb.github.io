@@ -166,7 +166,7 @@ ul {
 }
 
 #repositories > div > .grid-container > li > p {
-    height: calc(var(--size-primary) * 4);
+    height: calc(var(--size-primary) * 6);
     overflow-y: hidden;
 }
 
