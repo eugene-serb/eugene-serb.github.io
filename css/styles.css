@@ -140,7 +140,7 @@ ul {
 
 .grid-container {
     display: grid;
-    grid-gap: calc(var(--size-primary) * 2);
+    gap: calc(var(--size-primary) * 2);
 }
 
 .border-top {
