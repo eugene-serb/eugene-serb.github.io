@@ -79,6 +79,7 @@ a {
     background-color: transparent;
     font-weight: 500;
     color: var(--color-link);
+    text-decoration: none;
 }
 
     a:hover {
@@ -277,5 +278,10 @@ ul {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
         }
+
+    #repositories > div > .grid-container > li > p {
+        height: calc(var(--size-primary) * 6);
+        overflow-y: hidden;
+    }
 }
 
