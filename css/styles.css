@@ -2,12 +2,12 @@
 
 :root {
     --color-background: #FFFFFF;
-    --color-border: #E3E3E3;
-    --color-header: #000000;
-    --color-text: #525252;
-    --color-link: #3E3E3E;
-    --color-link-hover: #3333FF;
-
+    --color-border: #B2CDDB;
+    --color-header: #333333;
+    --color-text: #111111;
+    --color-link: #275D77;
+    --color-link-hover: #78A2B7;
+    --color-selection: #A2C9DB;
     --size-primary: 16px;
 }
 
@@ -16,6 +16,10 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
+}
+
+::selection {
+    background: var(--color-selection);
 }
 
 html {
@@ -183,7 +187,7 @@ ul {
 
     .social .flex-row {
         justify-content: flex-start;
-        gap: calc( var(--size-primary) / 2);
+        gap: calc( var(--size-primary) / 12);
     }
 
 @media only screen and (min-width: 320px) {
