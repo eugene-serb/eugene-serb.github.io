@@ -5,8 +5,9 @@
     --color-border: #E3E3E3;
     --color-header: #000000;
     --color-text: #525252;
+    --color-selection: #8ed6ff;
     --color-link: #3E3E3E;
-    --color-link-hover: #3333FF;
+    --color-link-hover: #00a2ff;
 
     --size-primary: 16px;
 }
@@ -16,6 +17,10 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
+}
+
+::selection {
+    background: var(--color-selection);
 }
 
 html {
