@@ -190,6 +190,10 @@ ul {
         gap: calc( var(--size-primary) / 12);
     }
 
+    .social .flex-row li a {
+        line-height: 0;
+    }
+
 @media only screen and (min-width: 320px) {
 
     .grid-container {
