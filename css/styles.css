@@ -79,7 +79,18 @@ a {
         text-decoration: none;
     }
 
+/* -------------- */
+/* NEW BASE RULES */
+/* -------------- */
+
+hr {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+/* ------------- */
 /* SERVICE RULES */
+/* ------------- */
 
 .hide {
     display: none !important;
@@ -190,7 +201,7 @@ a {
 /* ----------------------------------- */
 
 .page {
-    margin-top: calc(var(--size-primary) * 4);
+    margin-block-start: calc(var(--size-primary) * 4);
 }
 
 @media only screen and (min-width: 960px) {
