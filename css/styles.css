@@ -18,14 +18,12 @@
     --color-link: #275D77;
     --color-link-hover: #78A2B7;
     --color-selection: #A2C9DB;
-    --size-primary: 16px;
-    --site-width: 1080px;
 }
 
 html {
     font-family: 'Roboto', sans-serif;
     direction: ltr;
-    font-size: var(--size-primary);
+    font-size: 16px;
     line-height: 1.382em;
 }
 
@@ -110,10 +108,10 @@ hr {
 }
 
 .container {
-    max-width: var(--site-width);
+    max-width: 1080px;
     margin: 0 auto;
-    padding-left: var(--size-primary);
-    padding-right: var(--size-primary);
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 /* ------ */
@@ -127,7 +125,7 @@ hr {
 
 .banner {
     margin: auto;
-    padding: var(--size-primary);
+    padding: 16px;
 }
 
 /* ------------ */
@@ -143,8 +141,8 @@ hr {
 }
 
 .header-wrapper {
-    margin-block-start: calc(var(--size-primary) * 2);
-    margin-block-end: calc(var(--size-primary) * 2);
+    margin-block-start: 32px;
+    margin-block-end: 32px;
 }
 
 .logo-wrapper {
@@ -152,13 +150,13 @@ hr {
 }
 
 .logo-wrapper__logo {
-    font-size: calc(var(--size-primary) * 2);
+    font-size: 32px;
     font-weight: 500;
     color: var(--color-header);
 }
 
 .menu-wrapper {
-    margin-block-start: calc(var(--size-primary) * 2);
+    margin-block-start: 32px;
     align-self: center;
 }
 
@@ -169,7 +167,7 @@ hr {
 }
 
 .navigation__item {
-    font-size: var(--size-primary);
+    font-size: 16px;
     text-transform: uppercase;
 }
 
@@ -178,7 +176,7 @@ hr {
     .header-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: calc(var(--size-primary) * 2);
+        gap: 32px;
     }
 
     .logo-wrapper {
@@ -199,7 +197,7 @@ hr {
 /* ----------------------------------- */
 
 .page {
-    margin-block-start: calc(var(--size-primary) * 4);
+    margin-block-start: 64px;
 }
 
 @media only screen and (min-width: 960px) {
@@ -207,7 +205,7 @@ hr {
     .column-wrapper {
         display: grid;
         grid-template-columns: 3fr 2fr;
-        gap: calc(var(--size-primary) * 4);
+        gap: 64px;
     }
 
     .column-aside {
@@ -226,7 +224,7 @@ hr {
 /* --------------- */
 
 .content {
-    margin-block-end: calc(var(--size-primary) * 4);
+    margin-block-end: 64px;
 }
 
 .content__section-header {
@@ -333,7 +331,7 @@ hr {
 }
 
 .footer-wrapper {
-    padding-top: var(--size-primary);
-    padding-bottom: var(--size-primary);
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
