@@ -143,8 +143,8 @@ hr {
 }
 
 .header-wrapper {
-    padding-top: calc(var(--size-primary) * 2);
-    padding-bottom: calc(var(--size-primary) * 2);
+    margin-block-start: calc(var(--size-primary) * 2);
+    margin-block-end: calc(var(--size-primary) * 2);
 }
 
 .logo-wrapper {
@@ -179,8 +179,6 @@ hr {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: calc(var(--size-primary) * 2);
-        padding-top: calc(var(--size-primary) * 2);
-        padding-bottom: calc(var(--size-primary) * 2);
     }
 
     .logo-wrapper {
@@ -289,7 +287,7 @@ hr {
 
 .contacts {
     display: grid;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 1fr 8fr;
     gap: 16px 16px;
 }
 
