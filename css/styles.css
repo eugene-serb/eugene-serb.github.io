@@ -11,23 +11,32 @@
 }
 
 :root {
-    --color-a: #FFFFFA;
-    --color-b: #0D5C63;
-    --color-c: #44A1A0;
-    --color-d: #78CDD7;
-    --color-e: #247B7B;
+    /* Simple colors */
+    --color-white: #FFFFFF;
+    /* Palette five colors */
+    --color-a: #087E8B;
+    --color-b: #FF5A5F;
+    --color-c: #3C3C3C;
+    --color-d: #F5F5F5;
+    --color-e: #C1839F;
+    /* Palette A -- monochromatic */
+    --color-a-monocromatic-a: #0DC4D9;
+    --color-a-monocromatic-b: #39959F;
+    --color-a-monocromatic-c: #4ECBD9;
+    --color-a-monocromatic-d: #055159;
 }
 
 @media (prefers-color-scheme: light) {
-    
+
     :root {
-        --color-background: var(--color-a);
-        --color-header: var(--color-e);
-        --color-text: var(--color-b);
-        --color-link: var(--color-c);
-        --color-link-hover: var(--color-d);
-        --color-border: var(--color-d);
-        --color-selection: var(--color-d);
+        --color-background: var(--color-white);
+        --color-logo: var(--color-c);
+        --color-header: var(--color-c);
+        --color-text: var(--color-c);
+        --color-link: var(--color-a);
+        --color-link-hover: var(--color-a-monocromatic-a);
+        --color-border: var(--color-a-monocromatic-c);
+        --color-selection: var(--color-a-monocromatic-c);
     }
 
 }
@@ -35,13 +44,14 @@
 @media (prefers-color-scheme: dark) {
 
     :root {
-        --color-background: var(--color-b);
-        --color-header: var(--color-a);
-        --color-text: var(--color-a);
-        --color-link: var(--color-c);
-        --color-link-hover: var(--color-d);
-        --color-border: var(--color-d);
-        --color-selection: var(--color-d);
+        --color-background: var(--color-c);
+        --color-logo: var(--color-d);
+        --color-header: var(--color-d);
+        --color-text: var(--color-d);
+        --color-link: var(--color-a);
+        --color-link-hover: var(--color-a-monocromatic-a);
+        --color-border: var(--color-a-monocromatic-c);
+        --color-selection: var(--color-a-monocromatic-c);
     }
 
 }
@@ -178,7 +188,7 @@ hr {
 .logo-wrapper__logo {
     font-size: 32px;
     font-weight: 500;
-    color: var(--color-header);
+    color: var(--color-logo);
 }
 
 .menu-wrapper {
@@ -259,7 +269,7 @@ hr {
     color: var(--color-header);
     padding-left: 16px;
     border: 4px solid var(--color-background);
-    outline: 2px dashed var(--color-selection);
+    outline: 2px dashed var(--color-border);
     border-radius: 4px;
 }
 
@@ -268,9 +278,9 @@ hr {
     margin-block-start: 0;
     padding: 4px 4px 4px 16px;
     border: 2px dashed var(--color-background);
-    outline: 4px solid var(--color-selection);
+    outline: 4px solid var(--color-border);
     border-radius: 4px;
-    background-color: var(--color-selection);
+    background-color: var(--color-border);
     color: var(--color-background);
     text-decoration: none;
 }
