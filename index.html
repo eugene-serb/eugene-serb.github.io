@@ -102,16 +102,20 @@
 
         <section class="column-aside">
 
-            <div class="content">
+            <section class="content">
                 <img src="img/avatar.jpg" title="Yes, that's McDonald's' 😂" alt="Photo with me" class="content__image" />
-            </div>
+            </section>
 
-            <div class="content">
-                <h2 class="content__section-header_accentuated">Hello, friends 👋</h2>
-                <article class="content_bordered">My name is Eugene Serb, I live in Novorossiysk. I work in several professional fields at once: I am engaged in trading, financial analytics and investments, programming, music, drawing, medicine, and much more. Now I devote most of my time to trading and programming. I will be glad to meet new people!</article>
-            </div>
+            <section class="content">
+                <article>
+                    <h2 class="content__section-header_accentuated">Hello, friends 👋</h2>
+                    <p class="content_bordered">
+                        My name is Eugene Serb, I live in Novorossiysk. I work in several professional fields at once: I am engaged in trading, financial analytics and investments, programming, music, drawing, medicine, and much more. Now I devote most of my time to trading and programming. I will be glad to meet new people!
+                    </p>
+                </article>
+            </section>
 
-            <div translate="no" class="content">
+            <section translate="no" class="content">
                 <h2 class="content__section-header">Contacts.</h2>
 
                 <address class="contacts content_bordered">
@@ -228,7 +232,7 @@
                     </ul>
 
                 </address>
-            </div>
+            </section>
 
         </section>
 
@@ -237,66 +241,83 @@
             <section class="content" id="projects">
                 <h2 class="content__section-header">Projects.</h2>
 
-                <ul class="content-list">
-                    <li class="content-list__item content_bordered">
-                        <h3><a translate="no" href="https://eugene-serb.github.io/todolist/" target="_self">ToDo List</a></h3>
-                        <article class="content-list__item_project-article">This is a simple to-do list web application. Helps you organize tasks and plan projects.</article>
-                        <span class="language-item language-item_html">HTML</span><span class="language-item language-item_css">CSS</span><span class="language-item language-item_js">JavaScript</span>
-                    </li>
-                    <li class="content-list__item content_bordered">
-                        <h3><a translate="no" href="https://eugene-serb.github.io/sm-visualizer/" target="_self">SM Visualizer</a></h3>
-                        <article class="content-list__item_project-article">This is a visualizer for sorting methods. Helps you understand how they work and how they behave.</article>
-                        <span class="language-item language-item_html">HTML</span><span class="language-item language-item_css">CSS</span><span class="language-item language-item_js">JavaScript</span>
-                    </li>
-                    <li class="content-list__item content_bordered">
-                        <h3><a translate="no" href="https://eugene-serb.github.io/calculator/" target="_self">Calculator</a></h3>
-                        <article class="content-list__item_project-article">This is a calculator with an interface, a validator and more, capable of solving complex expressions.</article>
-                        <span class="language-item language-item_html">HTML</span><span class="language-item language-item_css">CSS</span><span class="language-item language-item_js">JavaScript</span>
-                    </li>
-                    <li class="content-list__item content_bordered">
-                        <h3><a translate="no" href="https://eugene-serb.github.io/" target="_self">Eugene Serb's Website</a></h3>
-                        <article class="content-list__item_project-article">This is a website about me with my contacts, biography, information about skills, services, etc.</article>
-                        <span class="language-item language-item_html">HTML</span><span class="language-item language-item_css">CSS</span><span class="language-item language-item_js">JavaScript</span>
-                    </li>
-                </ul>
+                <article class="content-item content_bordered">
+                    <h3><a translate="no" href="https://eugene-serb.github.io/todolist/" target="_self">ToDo List</a></h3>
+                    <p>This is a simple to-do list web application. Helps you organize tasks and plan projects.</p>
+                    <div class="language-row">
+                        <span class="language-item language-item_html">HTML</span>
+                        <span class="language-item language-item_css">CSS</span>
+                        <span class="language-item language-item_js">JavaScript</span>
+                    </div>
+                </article>
+
+                <article class="content-item content_bordered">
+                    <h3><a translate="no" href="https://eugene-serb.github.io/sm-visualizer/" target="_self">SM Visualizer</a></h3>
+                    <p>This is a visualizer for sorting methods. Helps you understand how they work and how they behave.</p>
+                    <div class="language-row">
+                        <span class="language-item language-item_html">HTML</span>
+                        <span class="language-item language-item_css">CSS</span>
+                        <span class="language-item language-item_js">JavaScript</span>
+                    </div>
+                </article>
+
+                <article class="content-item content_bordered">
+                    <h3><a translate="no" href="https://eugene-serb.github.io/calculator/" target="_self">Calculator</a></h3>
+                    <p>This is a calculator with an interface, a validator and more, capable of solving complex expressions.</p>
+                    <div class="language-row">
+                        <span class="language-item language-item_html">HTML</span>
+                        <span class="language-item language-item_css">CSS</span>
+                        <span class="language-item language-item_js">JavaScript</span>
+                    </div>
+                </article>
+
+                <article class="content-item content_bordered">
+                    <h3><a translate="no" href="https://eugene-serb.github.io/" target="_self">Eugene Serb's Website</a></h3>
+                    <p>This is a website about me with my contacts, biography, information about skills, services, etc.</p>
+                    <div class="language-row">
+                        <span class="language-item language-item_html">HTML</span>
+                        <span class="language-item language-item_css">CSS</span>
+                        <span class="language-item language-item_js">JavaScript</span>
+                    </div>
+                </article>
             </section>
 
             <section class="content" id="skills">
                 <h2 class="content__section-header">Skills.</h2>
 
-                <ul class="content-list">
-                    <li class="content-list__item content_bordered">
-                        <h3>Web & Soft Development</h3>
-                        <article>C#, C/C++, VB.NET, Pascal, .NET, Windows Forms, JavaScript, HTML, CSS, BEM, LESS, MS SQL, JSON, XML, XAML, Git, WordPress, Bootstrap, UIKit, SEO Audit</article>
-                    </li>
-                    <li class="content-list__item content_bordered">
-                        <h3>Finance & Trading</h3>
-                        <article>Complex analysis, futures, margin & spot tradings, risk & money management, understanding of market laws, cryptocurrencies, intraday trading</article>
-                    </li>
-                    <li class="content-list__item content_bordered">
-                        <h3>Other Skills</h3>
-                        <article>Play guitar & sing, draw people with a pencil :3, medicine & first aid, think, listen & hear. About all these later...</article>
-                    </li>
-                </ul>
+                <article class="content-item content_bordered">
+                    <h3>Web & Soft Development</h3>
+                    <p>C#, C/C++, VB.NET, Pascal, .NET, Windows Forms, JavaScript, HTML, CSS, BEM, LESS, MS SQL, JSON, XML, XAML, Git, WordPress, Bootstrap, UIKit, SEO Audit</p>
+                </article>
+
+                <article class="content-item content_bordered">
+                    <h3>Finance & Trading</h3>
+                    <p>Complex analysis, futures, margin & spot tradings, risk & money management, understanding of market laws, cryptocurrencies, intraday trading</p>
+                </article>
+
+                <article class="content-item content_bordered">
+                    <h3>Other Skills</h3>
+                    <p>Play guitar & sing, draw people with a pencil :3, medicine & first aid, think, listen & hear. About all these later...</p>
+                </article>
             </section>
 
             <section class="content" id="services">
                 <h2 class="content__section-header">Services.</h2>
 
-                <ul class="content-list">
-                    <li class="content-list__item content_bordered">
-                        <h3>Web & Soft Developer</h3>
-                        <article>I will develop a website or program for any OS and device. I will made refactor and translate your code into other languages.</article>
-                    </li>
-                    <li class="content-list__item content_bordered">
-                        <h3>Сomputer Technician</h3>
-                        <article>With great pleasure I will repair, modernization, overclock your computer, build a server or a mining rig for you.</article>
-                    </li>
-                    <li class="content-list__item content_bordered">
-                        <h3>And so much more...</h3>
-                        <article>There will be more in the future.</article>
-                    </li>
-                </ul>
+                <article class="content-item content_bordered">
+                    <h3>Web & Soft Developer</h3>
+                    <p>I will develop a website or program for any OS and device. I will made refactor and translate your code into other languages.</p>
+                </article>
+
+                <article class="content-item content_bordered">
+                    <h3>Сomputer Technician</h3>
+                    <p>With great pleasure I will repair, modernization, overclock your computer, build a server or a mining rig for you.</p>
+                </article>
+
+                <article class="content-item content_bordered">
+                    <h3>And so much more...</h3>
+                    <p>There will be more in the future.</p>
+                </article>
             </section>
 
         </section>

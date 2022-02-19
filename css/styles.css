@@ -296,15 +296,11 @@ hr {
     border-radius: 4px;
 }
 
-.content-list {
-    list-style-type: none;
-}
-
-.content-list__item {
+.content-item {
     margin-block-end: 16px;
 }
 
-    .content-list__item_project-article {
+    .content-item > h3 {
         margin-block-end: 16px;
     }
 
@@ -345,6 +341,10 @@ hr {
 /* -------- */
 /* PROJECTS */
 /* -------- */
+
+.language-row {
+    margin-block-start: 16px;
+}
 
 .language-item {
     margin-right: 8px;
