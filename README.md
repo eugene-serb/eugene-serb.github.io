@@ -1,6 +1,6 @@
 # Hi all!
 
-This repository of my website that contains links and description for my repositories and projects, and also contains contact information and my biography, my services and maybe, there will be a blog in the future.
+This is a repository of my personal website that contains links and description of my projects, as well as information about my contacts, biography, skills and services.
 
 I am making this site for myself and am learning how to do it. Here is a link to my – [[website](https://eugene-serb.github.io/)]
 
