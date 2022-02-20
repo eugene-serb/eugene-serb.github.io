@@ -122,6 +122,21 @@ hr {
     margin-block-end: 0.5em;
 }
 
+button, input, textarea, select {
+    padding: 2px 4px;
+    font-size: 14px
+}
+
+fieldset {
+    border: 2px dashed var(--color-border);
+    border-radius: 4px;
+    padding: 8px;
+}
+
+legend {
+    padding: 2px 4px;
+}
+
 /* ------------- */
 /* SERVICE RULES */
 /* ------------- */
