@@ -124,7 +124,8 @@ hr {
 
 button, input, textarea, select {
     padding: 2px 4px;
-    font-size: 14px
+    font-size: 14px;
+    line-height: 1.382em;
 }
 
 fieldset {
@@ -372,11 +373,17 @@ legend {
 .language-item_html { background-color: #e34c26; }
 .language-item_css { background-color: #563d7c; }
 .language-item_js { background-color: #f1e05a; }
+.language-item_ts { background-color: #2b7489; }
+.language-item_c-sharp { background-color: #178600; }
+.language-item_php { background-color: #4F5D95; }
+.language-item_c-plus-plus { background-color: #f34b7d; }
+.language-item_c-lang { background-color: #555555; }
+.language-item_visual-basic-dotnet { background-color: #945db7; }
+.language-item_python { background-color: #3572A5; }
 
 /* ------ */
 /* FOOTER */
 /* ------ */
-
 .footer {
     border-top: 2px dashed var(--color-border);
 }
