@@ -4,5 +4,9 @@
     <loc>https://eugene-serb.github.io/sitemap-dynamic.xml</loc>
     <lastmod>2022-02-24</lastmod>
   </sitemap>
+  <sitemap>
+    <loc>https://eugene-serb.github.io/sitemap-projects.xml</loc>
+    <lastmod>2022-02-24</lastmod>
+  </sitemap>
 </sitemapindex>
 
