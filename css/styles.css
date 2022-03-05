@@ -24,6 +24,26 @@
     --color-a-monocromatic-b: #39959F;
     --color-a-monocromatic-c: #4ECBD9;
     --color-a-monocromatic-d: #055159;
+    /* Palette B -- monochromatic */
+    --color-b-monocromatic-a: #802D2F;
+    --color-b-monocromatic-b: #FFA6A9;
+    --color-b-monocromatic-c: #805354;
+    --color-b-monocromatic-d: #CC474C;
+    /* Palette C -- monochromatic */
+    --color-c-monocromatic-a: #8A8A8A;
+    --color-c-monocromatic-b: #573D3D;
+    --color-c-monocromatic-c: #8A6060;
+    --color-c-monocromatic-d: #D6D6D6;
+    /* Palette D -- monochromatic */
+    --color-d-monocromatic-a: #757575;
+    --color-d-monocromatic-b: #F7ADAD;
+    --color-d-monocromatic-c: #755252;
+    --color-d-monocromatic-d: #C2C2C2;
+    /* Palette E -- monochromatic */
+    --color-e-monocromatic-a: #422D37;
+    --color-e-monocromatic-b: #CC4E86;
+    --color-e-monocromatic-c: #42192C;
+    --color-e-monocromatic-d: #8F6176;
 }
 
 @media (prefers-color-scheme: light) {
@@ -254,18 +274,18 @@ legend {
 
 @media only screen and (min-width: 960px) {
 
-    .column-wrapper {
+    .homepage-column-wrapper {
         display: grid;
         grid-template-columns: 3fr 2fr;
         gap: 64px;
     }
 
-    .column-aside {
+    .homepage-column-wrapper_column-aside {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
     }
 
-    .column-main {
+    .homepage-column-wrapper_column-main {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
     }
