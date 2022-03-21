@@ -1,2 +1,4 @@
-console.log('Follow me on Twitter: @eugene_serb')
+'use strict'
+
+console.log('Follow me on Twitter: @eugene_serb');
 
