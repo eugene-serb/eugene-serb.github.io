@@ -13,24 +13,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://eugene-serb.github.io/todolist/</loc>
-    <lastmod>2022-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://eugene-serb.github.io/snake-game/</loc>
-    <lastmod>2022-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://eugene-serb.github.io/2048-game/</loc>
-    <lastmod>2022-03-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://eugene-serb.github.io/slider/</loc>
     <lastmod>2022-03-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -45,6 +27,24 @@
   <url>
     <loc>https://eugene-serb.github.io/gamepad-master/</loc>
     <lastmod>2022-04-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://eugene-serb.github.io/todolist/</loc>
+    <lastmod>2022-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://eugene-serb.github.io/snake-game/</loc>
+    <lastmod>2022-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://eugene-serb.github.io/2048-game/</loc>
+    <lastmod>2022-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
