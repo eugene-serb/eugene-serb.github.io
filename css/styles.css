@@ -382,10 +382,14 @@ legend {
 
 .tag-row {
     margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px;
 }
 
 .tag-item {
-    margin-right: 8px;
     padding: 2px 8px;
     border-radius: 4px;
     background-color: var(--color-link);
