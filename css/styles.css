@@ -407,11 +407,11 @@ legend {
 .tag-item_c-lang { background-color: #555555; }
 .tag-item_visual-basic-dotnet { background-color: #945db7; }
 .tag-item_python { background-color: #3572A5; }
+.tag-item_pascal { background-color: #E3F171; }
 
 /* ------ */
 /* FOOTER */
 /* ------ */
-
 .footer {
     border-top: 2px dashed var(--color-border);
 }
