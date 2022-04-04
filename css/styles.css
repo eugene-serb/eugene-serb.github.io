@@ -392,14 +392,15 @@ legend {
 .tag-item {
     padding: 2px 8px;
     border-radius: 4px;
-    background-color: var(--color-link);
-    color: #ffffff;
     font-weight: 500;
+    background-color: var(--color-link);
+    color: var(--color-white);
 }
+
+.tag-item_neutral {  }
 
 .tag-item_html { background-color: #e34c26; }
 .tag-item_css { background-color: #563d7c; }
-.tag-item_js { background-color: #f1e05a; }
 .tag-item_ts { background-color: #2b7489; }
 .tag-item_php { background-color: #4F5D95; }
 .tag-item_c-sharp { background-color: #178600; }
@@ -407,7 +408,16 @@ legend {
 .tag-item_c-lang { background-color: #555555; }
 .tag-item_visual-basic-dotnet { background-color: #945db7; }
 .tag-item_python { background-color: #3572A5; }
-.tag-item_pascal { background-color: #E3F171; }
+
+.tag-item_js {
+    background-color: #f1e05a;
+    color: var(--color-text);
+}
+
+.tag-item_pascal {
+    background-color: #E3F171;
+    color: var(--color-text);
+}
 
 /* ------ */
 /* FOOTER */
