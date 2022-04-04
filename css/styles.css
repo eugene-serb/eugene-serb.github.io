@@ -282,12 +282,12 @@ legend {
         gap: 64px;
     }
 
-    .homepage-wrapper__column-first {
+    .column-first {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
     }
 
-    .homepage-wrapper__column-second {
+    .column-second {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
     }
@@ -380,28 +380,29 @@ legend {
 /* PROJECTS */
 /* -------- */
 
-.language-row {
+.tag-row {
     margin-top: 16px;
 }
 
-.language-item {
+.tag-item {
     margin-right: 8px;
     padding: 2px 8px;
     border-radius: 4px;
+    background-color: var(--color-link);
     color: #ffffff;
     font-weight: 500;
 }
 
-.language-item_html { background-color: #e34c26; }
-.language-item_css { background-color: #563d7c; }
-.language-item_js { background-color: #f1e05a; }
-.language-item_ts { background-color: #2b7489; }
-.language-item_php { background-color: #4F5D95; }
-.language-item_c-sharp { background-color: #178600; }
-.language-item_c-plus-plus { background-color: #f34b7d; }
-.language-item_c-lang { background-color: #555555; }
-.language-item_visual-basic-dotnet { background-color: #945db7; }
-.language-item_python { background-color: #3572A5; }
+.tag-item_html { background-color: #e34c26; }
+.tag-item_css { background-color: #563d7c; }
+.tag-item_js { background-color: #f1e05a; }
+.tag-item_ts { background-color: #2b7489; }
+.tag-item_php { background-color: #4F5D95; }
+.tag-item_c-sharp { background-color: #178600; }
+.tag-item_c-plus-plus { background-color: #f34b7d; }
+.tag-item_c-lang { background-color: #555555; }
+.tag-item_visual-basic-dotnet { background-color: #945db7; }
+.tag-item_python { background-color: #3572A5; }
 
 /* ------ */
 /* FOOTER */
