@@ -271,23 +271,24 @@ legend {
 
 .page {
     margin-top: 64px;
+    margin-bottom: 64px;
 }
 
 @media only screen and (min-width: 960px) {
 
-    .homepage-column-wrapper {
+    .homepage-wrapper {
         display: grid;
-        grid-template-columns: 3fr 2fr;
+        grid-template-columns: 1fr 1fr;
         gap: 64px;
     }
 
-    .homepage-column-wrapper_column-aside {
-        grid-column: 2 / 3;
+    .homepage-wrapper__column-first {
+        grid-column: 1 / 2;
         grid-row: 1 / 2;
     }
 
-    .homepage-column-wrapper_column-main {
-        grid-column: 1 / 2;
+    .homepage-wrapper__column-second {
+        grid-column: 2 / 3;
         grid-row: 1 / 2;
     }
 }
