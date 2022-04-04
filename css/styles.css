@@ -376,9 +376,9 @@ legend {
         border: none;
     }
 
-/* -------- */
-/* PROJECTS */
-/* -------- */
+/* ---- */
+/* TAGS */
+/* ---- */
 
 .tag-row {
     margin-top: 16px;
@@ -396,8 +396,6 @@ legend {
     background-color: var(--color-link);
     color: var(--color-white);
 }
-
-.tag-item_neutral {  }
 
 .tag-item_html { background-color: #e34c26; }
 .tag-item_css { background-color: #563d7c; }
@@ -422,6 +420,7 @@ legend {
 /* ------ */
 /* FOOTER */
 /* ------ */
+
 .footer {
     border-top: 2px dashed var(--color-border);
 }
