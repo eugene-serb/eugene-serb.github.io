@@ -13,6 +13,7 @@ This contains my other projects:
 6. Mediaplayer — [[rep](https://github.com/eugene-serb/mediaplayer/), [page](https://eugene-serb.github.io/mediaplayer/)]
 7. 2048 Game — [[rep](https://github.com/eugene-serb/2048-game/), [page](https://eugene-serb.github.io/2048-game/)]
 8. Gamepad Master — [[rep](https://github.com/eugene-serb/gamepad-master/), [page](https://eugene-serb.github.io/gamepad-master/)]
+9. Game of Life — [[rep](https://github.com/eugene-serb/game-of-life/), [page](https://eugene-serb.github.io/game-of-life/)]
 
 If you are interested in this or my other projects, or would like to suggest and share ideas with me, or just talk to me, contact me: *[@eugene_serb](https://t.me/eugene_serb)*
 
