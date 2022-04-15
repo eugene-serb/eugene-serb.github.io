@@ -81,6 +81,9 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     min-height: 100vh;
     background: var(--color-background);
 }
@@ -113,6 +116,11 @@ small { font-size: smaller; }
 span, p, article, blockquote {
     color: var(--color-text);
     font-weight: 400;
+}
+
+ul {
+    padding: 16px;
+    list-style-type: circle;
 }
 
 a {
@@ -183,6 +191,7 @@ legend {
 }
 
 .container {
+    width: 100%;
     max-width: 1080px;
     margin: 0 auto;
     padding-left: 16px;
@@ -236,6 +245,7 @@ legend {
 }
 
 .navigation {
+    padding: 0;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -271,6 +281,7 @@ legend {
 /* ----------------------------------- */
 
 .page {
+    flex-grow: 1;
     margin-top: 64px;
     margin-bottom: 64px;
 }
@@ -370,12 +381,13 @@ legend {
 }
 
 .contacts__iconed-links-row {
-    list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
     column-gap: 32px;
     row-gap: 16px;
+    padding: 0;
+    list-style-type: none;
 }
 
 .contacts__iconed-link {
