@@ -81,6 +81,9 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     min-height: 100vh;
     background: var(--color-background);
 }
@@ -89,7 +92,7 @@ body {
     background: var(--color-selection);
 }
 
-:focus {
+:focus-visible {
     outline: 2px solid var(--color-selection);
 }
 
@@ -115,6 +118,11 @@ span, p, article, blockquote {
     font-weight: 400;
 }
 
+ul {
+    padding: 16px;
+    list-style-type: circle;
+}
+
 a {
     background-color: transparent;
     border-bottom: 2px dashed var(--color-link);
@@ -130,20 +138,26 @@ a {
         text-decoration: none;
     }
 
-/* -------------- */
-/* NEW BASE RULES */
-/* -------------- */
+/* ----- */
+/* FORMS */
+/* ----- */
 
 hr {
     margin-block-start: 0.5em;
     margin-block-end: 0.5em;
 }
 
-button, input, textarea, select {
+button, input, textarea, select, option {
     padding: 2px 4px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.382em;
+    white-space: nowrap;
 }
+
+    option:hover {
+        color: var(--color-white);
+        background-color: var(--color-selection);
+    }
 
 fieldset {
     border: 2px dashed var(--color-border);
@@ -177,6 +191,7 @@ legend {
 }
 
 .container {
+    width: 100%;
     max-width: 1080px;
     margin: 0 auto;
     padding-left: 16px;
@@ -230,6 +245,7 @@ legend {
 }
 
 .navigation {
+    padding: 0;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -265,6 +281,7 @@ legend {
 /* ----------------------------------- */
 
 .page {
+    flex-grow: 1;
     margin-top: 64px;
     margin-bottom: 64px;
 }
@@ -285,6 +302,15 @@ legend {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
     }
+}
+
+.post {
+    margin: 0 auto;
+}
+
+.post__header {
+    text-align: center;
+    margin-block-end: 32px;
 }
 
 /* --------------- */
@@ -350,16 +376,18 @@ legend {
 .contacts {
     display: grid;
     grid-template-columns: 1fr 8fr;
-    gap: 16px 16px;
+    gap: 16px;
+    font-style: normal;
 }
 
 .contacts__iconed-links-row {
-    list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
     column-gap: 32px;
     row-gap: 16px;
+    padding: 0;
+    list-style-type: none;
 }
 
 .contacts__iconed-link {
@@ -420,7 +448,7 @@ legend {
 }
 
 .footer-wrapper {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
