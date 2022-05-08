@@ -415,7 +415,7 @@ legend {
     padding: 2px 8px;
     border-radius: 4px;
     font-weight: 500;
-    background-color: var(--color-link);
+    background-color: var(--color-a);
     color: var(--color-white);
 }
 
