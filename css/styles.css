@@ -399,6 +399,19 @@ legend {
     }
 
 /* ---- */
+/* GITS */
+/* ---- */
+
+.git-link {
+    margin-left: 4px;
+    font-size: 12px;
+}
+
+    .git-link a {
+        border-bottom: 1px dashed var(--color-link);
+    }
+
+/* ---- */
 /* TAGS */
 /* ---- */
 
