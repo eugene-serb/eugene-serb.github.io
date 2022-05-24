@@ -428,6 +428,7 @@ legend {
     padding: 2px 8px;
     border-radius: 4px;
     font-weight: 500;
+    border: 1px solid var(--color-c);
     background-color: var(--color-a);
     color: var(--color-white);
 }
@@ -441,6 +442,31 @@ legend {
 .tag-item_c-lang { background-color: #555555; }
 .tag-item_visual-basic-dotnet { background-color: #945db7; }
 .tag-item_python { background-color: #3572A5; }
+.tag-item_vue { background-color: #42b983; }
+.tag-item_node { background-color: #026e00; }
+.tag-item_postgres { background-color: #336791; }
+
+.tag-item_npm { background-color: #cb0000; }
+
+.tag-item_git {
+    background-color: #f14e32;
+}
+
+.tag-item_mongo {
+    border: 1px solid #00684A;
+    background-color: #00ED64;
+    color: #001E2B;
+}
+
+.tag-item_express {
+    background-color: #e0f5ff;
+    color: var(--color-c);
+}
+
+.tag-item_electron {
+    background-color: #2b2e3b;
+    color: #9feaf9;
+}
 
 .tag-item_js {
     background-color: #f1e05a;

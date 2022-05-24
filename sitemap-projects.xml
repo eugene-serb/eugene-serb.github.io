@@ -37,6 +37,12 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://eugene-serb.github.io/todolist-vue/</loc>
+    <lastmod>2022-05-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://eugene-serb.github.io/snake-game/</loc>
     <lastmod>2022-05-06</lastmod>
     <changefreq>weekly</changefreq>
