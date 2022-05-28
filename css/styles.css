@@ -150,7 +150,8 @@ hr {
 button, input, textarea, select {
     padding: 8px 16px;
     border: 2px solid var(--color-link);
-    background: none;
+    background: var(--color-background);
+    color: var(--color-text);
     font-size: 16px;
     line-height: 1.382em;
     white-space: nowrap;
@@ -163,13 +164,15 @@ button, input, textarea, select {
     }
 
 option {
+    background: var(--color-background);
+    color: var(--color-text);
     font-size: 16px;
     line-height: 1.382em;
 }
 
     option:hover {
-        color: var(--color-white);
         background-color: var(--color-selection);
+        color: var(--color-white);
     }
 
 fieldset {
