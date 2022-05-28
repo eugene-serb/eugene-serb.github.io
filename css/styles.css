@@ -148,7 +148,7 @@ hr {
 }
 
 button, input, textarea, select {
-    padding: 8px 16px;
+    padding: 4px 8px;
     border: 2px solid var(--color-link);
     background: var(--color-background);
     color: var(--color-text);
