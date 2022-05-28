@@ -183,6 +183,7 @@ fieldset {
 
 legend {
     padding: 2px 4px;
+    text-align: left;
 }
 
 /* ------------- */
