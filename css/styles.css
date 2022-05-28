@@ -452,21 +452,17 @@ legend {
 .tag-item_html { background-color: #e34c26; }
 .tag-item_css { background-color: #563d7c; }
 .tag-item_ts { background-color: #2b7489; }
+.tag-item_vue { background-color: #42b983; }
+.tag-item_node { background-color: #026e00; }
+.tag-item_postgres { background-color: #336791; }
+.tag-item_npm { background-color: #cb0000; }
+.tag-item_git { background-color: #f14e32; }
 .tag-item_php { background-color: #4F5D95; }
 .tag-item_c-sharp { background-color: #178600; }
 .tag-item_c-plus-plus { background-color: #f34b7d; }
 .tag-item_c-lang { background-color: #555555; }
 .tag-item_visual-basic-dotnet { background-color: #945db7; }
 .tag-item_python { background-color: #3572A5; }
-.tag-item_vue { background-color: #42b983; }
-.tag-item_node { background-color: #026e00; }
-.tag-item_postgres { background-color: #336791; }
-
-.tag-item_npm { background-color: #cb0000; }
-
-.tag-item_git {
-    background-color: #f14e32;
-}
 
 .tag-item_mongo {
     border: 1px solid #00684A;
