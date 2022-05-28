@@ -147,11 +147,24 @@ hr {
     margin-block-end: 0.5em;
 }
 
-button, input, textarea, select, option {
-    padding: 2px 4px;
+button, input, textarea, select {
+    padding: 8px 16px;
+    border: 2px solid var(--color-link);
+    background: none;
     font-size: 16px;
     line-height: 1.382em;
     white-space: nowrap;
+}
+
+    button:hover, input:hover,
+    textarea:hover, select:hover {
+        border: 2px solid var(--color-link-hover);
+        transition: all 0.5s ease;
+    }
+
+option {
+    font-size: 16px;
+    line-height: 1.382em;
 }
 
     option:hover {
