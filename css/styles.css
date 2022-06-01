@@ -58,7 +58,7 @@
         --color-border: var(--color-a);
         --color-selection: var(--color-a-monocromatic-c);
         --color-table-header: var(--color-a);
-        --color-table-item: var(--color-a-monocromatic-c);
+        --color-table-item: var(--color-a-monocromatic-a);
     }
 }
 
@@ -72,7 +72,7 @@
         --color-link-hover: var(--color-a-monocromatic-a);
         --color-border: var(--color-a);
         --color-selection: var(--color-a-monocromatic-c);
-        --color-table-header: var(--color-a-monocromatic-c);
+        --color-table-header: var(--color-a-monocromatic-a);
         --color-table-item: var(--color-a);
     }
 }
@@ -196,6 +196,7 @@ legend {
 
 table, th, td {
     width: 100%;
+    margin-top: 32px;
     padding: 8px;
     border-collapse: collapse;
     table-layout: fixed;
