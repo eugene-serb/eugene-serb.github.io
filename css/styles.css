@@ -193,13 +193,13 @@ legend {
 table, th, td {
     width: 100%;
     padding: 8px;
-    border: 1px solid var(--color-border);
     border-collapse: collapse;
     table-layout: fixed;
     font-weight: 400;
 }
 
 thead > tr {
+    border-bottom: 4px solid var(--color-a-monocromatic-c);
     background-color: var(--color-a);
     color: var(--color-d);
 }
@@ -210,10 +210,11 @@ thead > tr {
 
 tbody > tr:nth-child(even) {
     background-color: var(--color-a-monocromatic-c);
+    color: var(--color-d);
 }
 
 tfoot {
-    border-top: 2px solid var(--color-border);
+    border-top: 4px solid var(--color-border);
 }
 
 /* ------------- */
@@ -414,6 +415,15 @@ tfoot {
     border: 4px solid var(--color-background);
     outline: 2px dashed var(--color-border);
     border-radius: 4px;
+}
+
+.content-link {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px;
 }
 
 /* -------- */
