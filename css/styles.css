@@ -57,6 +57,8 @@
         --color-link-hover: var(--color-a-monocromatic-a);
         --color-border: var(--color-a);
         --color-selection: var(--color-a-monocromatic-c);
+        --color-table-header: var(--color-a);
+        --color-table-item: var(--color-a-monocromatic-c);
     }
 }
 
@@ -70,6 +72,8 @@
         --color-link-hover: var(--color-a-monocromatic-a);
         --color-border: var(--color-a);
         --color-selection: var(--color-a-monocromatic-c);
+        --color-table-header: var(--color-a-monocromatic-c);
+        --color-table-item: var(--color-a);
     }
 }
 
@@ -199,8 +203,8 @@ table, th, td {
 }
 
 thead > tr {
-    border-bottom: 4px solid var(--color-a-monocromatic-c);
-    background-color: var(--color-a);
+    border-bottom: 4px solid var(--color-table-item);
+    background-color: var(--color-table-header);
     color: var(--color-d);
 }
 
@@ -209,12 +213,12 @@ thead > tr {
     }
 
 tbody > tr:nth-child(even) {
-    background-color: var(--color-a-monocromatic-c);
+    background-color: var(--color-table-item);
     color: var(--color-d);
 }
 
 tfoot {
-    border-top: 4px solid var(--color-border);
+    border-top: 4px solid var(--color-table-header);
 }
 
 /* ------------- */
