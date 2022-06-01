@@ -186,6 +186,36 @@ legend {
     text-align: left;
 }
 
+/* ------ */
+/* TABLES */
+/* ------ */
+
+table, th, td {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--color-border);
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-weight: 400;
+}
+
+thead > tr {
+    background-color: var(--color-a);
+    color: var(--color-d);
+}
+
+    thead > tr > th {
+        font-weight: 500;
+    }
+
+tbody > tr:nth-child(even) {
+    background-color: var(--color-a-monocromatic-c);
+}
+
+tfoot {
+    border-top: 2px solid var(--color-border);
+}
+
 /* ------------- */
 /* SERVICE RULES */
 /* ------------- */
