@@ -203,15 +203,18 @@ table, th, td {
     font-weight: 400;
 }
 
-thead > tr {
+thead {
     border-bottom: 4px solid var(--color-table-item);
-    background-color: var(--color-table-header);
-    color: var(--color-d);
 }
 
-    thead > tr > th {
-        font-weight: 500;
+    thead > tr {
+        background-color: var(--color-table-header);
+        color: var(--color-d);
     }
+
+        thead > tr > th {
+            font-weight: 500;
+        }
 
 tbody > tr:nth-child(even) {
     background-color: var(--color-table-item);
