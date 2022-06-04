@@ -60,7 +60,8 @@
         --color-border: var(--color-a);
         --color-border-alpha: var(--color-a-alpha);
         --color-selection: var(--color-a-monocromatic-c);
-        --color-table-header: var(--color-a);
+        --color-table-header-background: var(--color-a);
+        --color-table-header-text: var(--color-d);
         --color-table-item: var(--color-a-monocromatic-a);
     }
 }
@@ -76,7 +77,8 @@
         --color-border: var(--color-a);
         --color-border-alpha: var(--color-a-alpha);
         --color-selection: var(--color-a-monocromatic-c);
-        --color-table-header: var(--color-a-monocromatic-a);
+        --color-table-header-background: var(--color-a-monocromatic-a);
+        --color-table-header-text: var(--color-c);
         --color-table-item: var(--color-a);
     }
 }
@@ -212,8 +214,8 @@ thead {
 }
 
     thead > tr {
-        background-color: var(--color-table-header);
-        color: var(--color-c);
+        background-color: var(--color-table-header-background);
+        color: var(--color-table-header-text);
     }
 
         thead > tr > th {
