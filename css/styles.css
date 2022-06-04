@@ -479,7 +479,7 @@ tfoot {
 }
 
     .git-link a {
-        border-bottom: 1px dashed var(--color-link);
+        border-bottom: 1px solid var(--color-link);
     }
 
 /* ---- */
