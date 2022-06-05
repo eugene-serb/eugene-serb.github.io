@@ -14,8 +14,8 @@
 :root {
     /* Simple colors */
     --color-white: #FFFFFF;
-    /* Consts colors */
     --color-a-alpha: #087E8B40;
+    /* ---------------------- */
     /* Palette of five colors */
     --color-a: #087E8B;
     --color-b: #FF5A5F;
@@ -135,7 +135,7 @@ ul {
 
 a {
     background-color: transparent;
-    border-bottom: 2px solid var(--color-link);
+    border-bottom: 2px solid transparent;
     font-weight: 500;
     color: var(--color-link);
     text-decoration: none;
@@ -479,8 +479,12 @@ tfoot {
 }
 
     .git-link a {
-        border-bottom: 1px solid var(--color-link);
+        border-bottom: 1px solid transparent;
     }
+
+        .git-link a:hover {
+            border-bottom: 1px solid var(--color-link-hover);
+        }
 
 /* ---- */
 /* TAGS */
