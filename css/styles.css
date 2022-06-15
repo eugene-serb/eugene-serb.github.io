@@ -14,6 +14,8 @@
 :root {
     /* Simple colors */
     --color-white: #FFFFFF;
+    --color-a-alpha: #087E8B40;
+    /* ---------------------- */
     /* Palette of five colors */
     --color-a: #087E8B;
     --color-b: #FF5A5F;
@@ -56,7 +58,11 @@
         --color-link: var(--color-a);
         --color-link-hover: var(--color-a-monocromatic-a);
         --color-border: var(--color-a);
+        --color-border-alpha: var(--color-a-alpha);
         --color-selection: var(--color-a-monocromatic-c);
+        --color-table-header-background: var(--color-a);
+        --color-table-header-text: var(--color-d);
+        --color-table-item: var(--color-a-monocromatic-a);
     }
 }
 
@@ -69,7 +75,11 @@
         --color-link: var(--color-a);
         --color-link-hover: var(--color-a-monocromatic-a);
         --color-border: var(--color-a);
+        --color-border-alpha: var(--color-a-alpha);
         --color-selection: var(--color-a-monocromatic-c);
+        --color-table-header-background: var(--color-a-monocromatic-a);
+        --color-table-header-text: var(--color-c);
+        --color-table-item: var(--color-a);
     }
 }
 
@@ -125,7 +135,7 @@ ul {
 
 a {
     background-color: transparent;
-    border-bottom: 2px dashed var(--color-link);
+    border-bottom: 2px solid transparent;
     font-weight: 500;
     color: var(--color-link);
     text-decoration: none;
@@ -147,26 +157,77 @@ hr {
     margin-block-end: 0.5em;
 }
 
-button, input, textarea, select, option {
-    padding: 2px 4px;
+button, input, textarea, select {
+    padding: 4px 8px;
+    border: 2px solid var(--color-link);
+    background: var(--color-background);
+    color: var(--color-text);
     font-size: 16px;
     line-height: 1.382em;
     white-space: nowrap;
 }
 
+    button:hover, input:hover,
+    textarea:hover, select:hover {
+        border: 2px solid var(--color-link-hover);
+        transition: all 0.5s ease;
+    }
+
+option {
+    background: var(--color-background);
+    color: var(--color-text);
+    font-size: 16px;
+    line-height: 1.382em;
+}
+
     option:hover {
-        color: var(--color-white);
         background-color: var(--color-selection);
+        color: var(--color-white);
     }
 
 fieldset {
-    border: 2px dashed var(--color-border);
+    border: 2px solid var(--color-border-alpha);
     border-radius: 4px;
     padding: 8px;
 }
 
 legend {
     padding: 2px 4px;
+    text-align: left;
+}
+
+/* ------ */
+/* TABLES */
+/* ------ */
+
+table, th, td {
+    width: 100%;
+    padding: 8px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-weight: 400;
+}
+
+thead {
+    border-bottom: 4px solid var(--color-table-item);
+}
+
+    thead > tr {
+        background-color: var(--color-table-header-background);
+        color: var(--color-table-header-text);
+    }
+
+        thead > tr > th {
+            font-weight: 500;
+        }
+
+tbody > tr:nth-child(even) {
+    background-color: var(--color-table-item);
+    color: var(--color-d);
+}
+
+tfoot {
+    border-top: 4px solid var(--color-table-header-background);
 }
 
 /* ------------- */
@@ -221,7 +282,7 @@ legend {
 /* ------ */
 
 .header {
-    border-bottom: 2px dashed var(--color-border);
+    border-bottom: 2px solid var(--color-border);
 }
 
 .header-wrapper {
@@ -324,11 +385,12 @@ legend {
 .content__section-header {
     font-size: 1.8em;
     margin-top: 0;
-    color: var(--color-header);
+    margin-bottom: 32px;
     padding-left: 16px;
     border: 4px solid var(--color-background);
-    outline: 2px dashed var(--color-border);
+    outline: 2px solid var(--color-border);
     border-radius: 4px;
+    color: var(--color-header);
 }
 
 .content__section-header_accentuated {
@@ -350,7 +412,7 @@ legend {
 .content__image {
     width: 100%;
     border: 4px solid var(--color-background);
-    outline: 2px dashed var(--color-border);
+    outline: 2px solid var(--color-border);
     border-radius: 4px;
 }
 
@@ -365,8 +427,17 @@ legend {
 .content_bordered {
     padding: 16px;
     border: 4px solid var(--color-background);
-    outline: 2px dashed var(--color-border);
+    outline: 2px solid var(--color-border-alpha);
     border-radius: 4px;
+}
+
+.content-link {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px;
 }
 
 /* -------- */
@@ -399,6 +470,23 @@ legend {
     }
 
 /* ---- */
+/* GITS */
+/* ---- */
+
+.git-link {
+    margin-left: 4px;
+    font-size: 12px;
+}
+
+    .git-link a {
+        border-bottom: 1px solid transparent;
+    }
+
+        .git-link a:hover {
+            border-bottom: 1px solid var(--color-link-hover);
+        }
+
+/* ---- */
 /* TAGS */
 /* ---- */
 
@@ -415,19 +503,41 @@ legend {
     padding: 2px 8px;
     border-radius: 4px;
     font-weight: 500;
-    background-color: var(--color-link);
+    border: 1px solid var(--color-c);
+    background-color: var(--color-a);
     color: var(--color-white);
 }
 
 .tag-item_html { background-color: #e34c26; }
 .tag-item_css { background-color: #563d7c; }
 .tag-item_ts { background-color: #2b7489; }
+.tag-item_vue { background-color: #42b983; }
+.tag-item_node { background-color: #026e00; }
+.tag-item_postgres { background-color: #336791; }
+.tag-item_npm { background-color: #cb0000; }
+.tag-item_git { background-color: #f14e32; }
 .tag-item_php { background-color: #4F5D95; }
 .tag-item_c-sharp { background-color: #178600; }
 .tag-item_c-plus-plus { background-color: #f34b7d; }
 .tag-item_c-lang { background-color: #555555; }
 .tag-item_visual-basic-dotnet { background-color: #945db7; }
 .tag-item_python { background-color: #3572A5; }
+
+.tag-item_mongo {
+    border: 1px solid #00684A;
+    background-color: #00ED64;
+    color: #001E2B;
+}
+
+.tag-item_express {
+    background-color: #e0f5ff;
+    color: var(--color-c);
+}
+
+.tag-item_electron {
+    background-color: #2b2e3b;
+    color: #9feaf9;
+}
 
 .tag-item_js {
     background-color: #f1e05a;
@@ -444,7 +554,7 @@ legend {
 /* ------ */
 
 .footer {
-    border-top: 2px dashed var(--color-border);
+    border-top: 2px solid var(--color-border);
 }
 
 .footer-wrapper {
