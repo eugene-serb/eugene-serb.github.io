@@ -138,6 +138,7 @@ body {
 
 :focus-visible {
     outline: 2px solid var(--color-selection);
+    border: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -315,7 +316,8 @@ table, th, td {
     }
 
     .header :focus-visible {
-        border-bottom: 2px solid var(--color-header-navigation-link-hover);
+        outline: 2px solid var(--color-header-navigation-link-hover);
+        border-bottom: none;
     }
 
 .header-wrapper {
