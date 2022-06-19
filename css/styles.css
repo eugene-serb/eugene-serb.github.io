@@ -59,6 +59,7 @@
     :root {
         /* base colors */
         --color-background: var(--color-white);
+        --color-fieldset-border: #4ECBD940;
         /* components colors */
         --color-header-background: var(--color-a-monocromatic-c);
         --color-header-borderline: var(--color-a);
@@ -90,6 +91,7 @@
     :root {
         /* base colors */
         --color-background: var(--color-c);
+        --color-fieldset-border: #4ECBD940;
         /* components colors */
         --color-header-background: var(--color-a);
         --color-header-borderline: var(--color-a-monocromatic-c);
@@ -195,6 +197,17 @@ hr {
     margin-block-end: 0.5em;
 }
 
+legend {
+    padding: 2px 4px;
+    text-align: left;
+}
+
+fieldset {
+    border: 2px solid var(--color-fieldset-border);
+    border-radius: var(--number-border-radius);
+    padding: 8px;
+}
+
 button, input, textarea, select {
     padding: 4px 8px;
     border: 2px solid var(--color-link);
@@ -222,17 +235,6 @@ option {
         background-color: var(--color-selection);
         color: var(--color-white);
     }
-
-fieldset {
-    border: 2px solid var(--color-border-alpha);
-    border-radius: var(--number-border-radius);
-    padding: 8px;
-}
-
-legend {
-    padding: 2px 4px;
-    text-align: left;
-}
 
 /* ------ */
 /* TABLES */
