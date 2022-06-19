@@ -57,10 +57,18 @@
 
 @media (prefers-color-scheme: light) {
     :root {
-        /* base colors */
+        /* Base colors */
         --color-background: var(--color-white);
+        --color-text: var(--color-c);
+        --color-text-header: var(--color-d);
+        --color-link: var(--color-a);
+        --color-link-hover: var(--color-a-monocromatic-a);
+        --color-selection: var(--color-a-monocromatic-c);
         --color-fieldset-border: #4ECBD940;
-        /* components colors */
+        --color-table-header-background: var(--color-a);
+        --color-table-header-text: var(--color-d);
+        --color-table-item: var(--color-a-monocromatic-a);
+        /* Components colors */
         --color-header-background: var(--color-a-monocromatic-c);
         --color-header-borderline: var(--color-a);
         --color-header-selection: var(--color-a-monocromatic-b);
@@ -73,26 +81,23 @@
         --color-content-header-colored: var(--color-a-monocromatic-c);
         --color-content-header-colored-borderline: var(--color-a);
         --color-content-header-colored-selection: var(--color-a-monocromatic-b);
-        /* new colors */
-        /* old colors */
-        --color-text: var(--color-c);
-        --color-link: var(--color-a);
-        --color-link-hover: var(--color-a-monocromatic-a);
-        --color-border: var(--color-a);
-        --color-border-alpha: var(--color-a-alpha);
-        --color-selection: var(--color-a-monocromatic-c);
-        --color-table-header-background: var(--color-a);
-        --color-table-header-text: var(--color-d);
-        --color-table-item: var(--color-a-monocromatic-a);
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        /* base colors */
+        /* Base colors */
         --color-background: var(--color-c);
+        --color-text: var(--color-d);
+        --color-text-header: var(--color-d);
+        --color-link: var(--color-a);
+        --color-link-hover: var(--color-a-monocromatic-a);
+        --color-selection: var(--color-a-monocromatic-c);
         --color-fieldset-border: #4ECBD940;
-        /* components colors */
+        --color-table-header-background: var(--color-a-monocromatic-a);
+        --color-table-header-text: var(--color-c);
+        --color-table-item: var(--color-a);
+        /* Components colors */
         --color-header-background: var(--color-a);
         --color-header-borderline: var(--color-a-monocromatic-c);
         --color-header-selection: var(--color-a-monocromatic-b);
@@ -105,17 +110,6 @@
         --color-content-header-colored: var(--color-a);
         --color-content-header-colored-borderline: var(--color-a-monocromatic-c);
         --color-content-header-colored-selection: var(--color-a-monocromatic-b);
-        /* new colors */
-        /* old colors */
-        --color-text: var(--color-d);
-        --color-link: var(--color-a);
-        --color-link-hover: var(--color-a-monocromatic-a);
-        --color-border: var(--color-a);
-        --color-border-alpha: var(--color-a-alpha);
-        --color-selection: var(--color-a-monocromatic-c);
-        --color-table-header-background: var(--color-a-monocromatic-a);
-        --color-table-header-text: var(--color-c);
-        --color-table-item: var(--color-a);
     }
 }
 
@@ -147,7 +141,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: var(--color-header);
+    color: var(--color-text-header);
     font-weight: 500;
     margin-block-start: 0.382em;
     margin-block-end: 0.618em;
@@ -447,7 +441,7 @@ table, th, td {
     padding-left: 16px;
     border: 2px solid var(--color-content-borderline);
     border-radius: var(--number-border-radius);
-    color: var(--color-header);
+    color: var(--color-text-header);
     font-size: 1.8em;
 }
 
