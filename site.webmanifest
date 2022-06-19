@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "short_name": "",
+  "name": "eugene-serb.github.io",
+  "short_name": "eugene-serb",
   "icons": [
     {
       "src": "https://eugene-serb.github.io/img/android-chrome-192x192.png",
@@ -13,8 +13,8 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#FFFFFF",
-  "background_color": "#FFFFFF",
+  "theme_color": "#4ECBD9",
+  "background_color": "#4ECBD9",
   "display": "standalone"
 }
 
