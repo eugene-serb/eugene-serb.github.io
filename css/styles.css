@@ -51,9 +51,17 @@
 
 @media (prefers-color-scheme: light) {
     :root {
+        /* base colors */
         --color-background: var(--color-white);
-        --color-logo: var(--color-c);
-        --color-header: var(--color-c);
+        /* components colors */
+        --color-header-background: var(--color-a-monocromatic-c);
+        --color-header-borderline: var(--color-a);
+        --color-header-selection: var(--color-a-monocromatic-b);
+        --color-header-logo: var(--color-white);
+        --color-header-navigation-link: var(--color-white);
+        --color-header-navigation-link-hover: var(--color-white);
+        /* new colors */
+        /* old colors */
         --color-text: var(--color-c);
         --color-link: var(--color-a);
         --color-link-hover: var(--color-a-monocromatic-a);
@@ -68,9 +76,17 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
+        /* base colors */
         --color-background: var(--color-c);
-        --color-logo: var(--color-d);
-        --color-header: var(--color-d);
+        /* components colors */
+        --color-header-background: var(--color-a);
+        --color-header-borderline: var(--color-a-monocromatic-c);
+        --color-header-selection: var(--color-a-monocromatic-b);
+        --color-header-logo: var(--color-white);
+        --color-header-navigation-link: var(--color-white);
+        --color-header-navigation-link-hover: var(--color-white);
+        /* new colors */
+        /* old colors */
         --color-text: var(--color-d);
         --color-link: var(--color-a);
         --color-link-hover: var(--color-a-monocromatic-a);
@@ -273,31 +289,42 @@ table, th, td {
     padding: 16px;
 }
 
-/* ------------ */
-/* ITEMS STYLES */
-/* ------------ */
+/* ----------------- */
+/* COMPONENTS STYLES */
+/* ----------------- */
 
 /* ------ */
 /* HEADER */
 /* ------ */
 
 .header {
-    border-bottom: 2px solid var(--color-border);
+    background: var(--color-header-background);
+    border-bottom: 32px solid var(--color-header-borderline);
 }
 
-.header-wrapper {
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
+    .header ::selection {
+        background: var(--color-header-selection);
+    }
+
+    .header :focus {
+        padding: 4px;
+        border: 2px solid var(--color-header-selection);
+    }
+
+    .header-wrapper {
+        padding-top: 64px;
+        padding-bottom: 16px;
+    }
 
 .logo-wrapper {
     text-align: center;
 }
 
 .logo-wrapper__logo {
-    font-size: 32px;
+    font-size: 48px;
     font-weight: 500;
-    color: var(--color-logo);
+    color: var(--color-header-logo);
+    cursor: default;
 }
 
 .menu-wrapper {
@@ -309,13 +336,25 @@ table, th, td {
     padding: 0;
     list-style-type: none;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 8px;
 }
 
 .navigation__item {
     font-size: 16px;
     text-transform: uppercase;
 }
+
+    .navigation__item > a {
+        color: var(--color-header-navigation-link);
+    }
+
+        .navigation__item > a:hover {
+            border-color: var(--color-header-navigation-link-hover);
+            color: var(--color-header-navigation-link-hover);
+        }
 
 @media only screen and (min-width: 720px) {
     .header-wrapper {
@@ -334,6 +373,13 @@ table, th, td {
         margin-top: 0px;
         grid-column: 2 / 3;
         grid-row: 1 / 2;
+        align-self: flex-end;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .logo-wrapper__logo {
+        font-size: 64px;
     }
 }
 
