@@ -60,6 +60,7 @@
         --color-header-logo: var(--color-white);
         --color-header-navigation-link: var(--color-white);
         --color-header-navigation-link-hover: var(--color-white);
+        --color-footer-borderline: var(--color-a);
         /* new colors */
         /* old colors */
         --color-text: var(--color-c);
@@ -279,20 +280,6 @@ table, th, td {
     padding-right: 16px;
 }
 
-/* ------ */
-/* BANNER */
-/* ------ */
-
-.banner-container {
-    min-height: 100vh;
-    display: flex;
-}
-
-.banner {
-    margin: auto;
-    padding: 16px;
-}
-
 /* ----------------- */
 /* COMPONENTS STYLES */
 /* ----------------- */
@@ -390,6 +377,22 @@ table, th, td {
         font-size: 64px;
     }
 }
+
+/* ------ */
+/* FOOTER */
+/* ------ */
+
+.footer {
+    border-top: 4px solid var(--color-footer-borderline);
+}
+
+.footer-wrapper {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+
+
 
 /* ----------------------------------- */
 /* MAIN, PAGE FLOW AND CONTENT SECTION */
@@ -603,16 +606,26 @@ table, th, td {
     color: var(--color-c);
 }
 
+
+
+
+/* ----- */
+/* PAGES */
+/* ----- */
+
 /* ------ */
-/* FOOTER */
+/* BANNER */
 /* ------ */
 
-.footer {
-    border-top: 2px solid var(--color-border);
+.banner-container {
+    min-height: 100vh;
+    display: flex;
 }
 
-.footer-wrapper {
-    padding-top: 32px;
-    padding-bottom: 32px;
+.banner {
+    margin: auto;
+    padding: 16px;
 }
+
+
 
