@@ -404,7 +404,24 @@ table, th, td {
 .footer-wrapper {
     padding-top: 32px;
     padding-bottom: 32px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 32px;
 }
+
+.created-by {
+    align-self: flex-end;
+}
+
+    .created-by > span {
+        padding-right: 8px;
+    }
+
+    .created-by > a {
+        font-size: 32px;
+    }
 
 /* ---- */
 /* PAGE */
