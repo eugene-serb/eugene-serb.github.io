@@ -58,6 +58,7 @@
 @media (prefers-color-scheme: light) {
     :root {
         /* Base colors */
+        --color-border: #4ECBD940;
         --color-background: var(--color-white);
         --color-text: var(--color-c);
         --color-text-header: var(--color-с);
@@ -87,6 +88,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         /* Base colors */
+        --color-border: #4ECBD940;
         --color-background: var(--color-c);
         --color-text: var(--color-d);
         --color-text-header: var(--color-d);
