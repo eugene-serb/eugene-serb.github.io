@@ -1,8 +1,6 @@
 #
 # robots.txt at https://eugene-serb.github.io/
 #
-# Follow me on Twitter: @eugene_serb
-#
 
 # All Bots
 User-agent: *
