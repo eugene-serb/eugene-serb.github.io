@@ -588,6 +588,10 @@ table, th, td {
     font-weight: 500;
 }
 
+    .tag-item::selection {
+        background-color: var(--color-a-monocromatic-b);
+    }
+
 .tag-item_html { background-color: #e34c26; }
 .tag-item_css { background-color: #563d7c; }
 .tag-item_ts { background-color: #2b7489; }
