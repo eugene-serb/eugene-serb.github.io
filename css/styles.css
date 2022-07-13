@@ -1,6 +1,6 @@
 /* ------------------------------ */
 /* eugene-serb.github.io styles   */
-/* version:     dated 2022.07.04  */
+/* version:     dated 2022.07.13  */
 /* author:      Eugene Serb       */
 /* ------------------------------ */
 
@@ -583,7 +583,7 @@ table, th, td {
     padding: 2px 8px;
     border: 1px solid var(--color-c);
     border-radius: var(--number-border-radius);
-    background-color: var(--color-a);
+    background-color: var(--color-a-monocromatic-c);
     color: var(--color-white);
     font-weight: 500;
 }
@@ -607,6 +607,11 @@ table, th, td {
     border-color: #00684A;
     background-color: #00ED64;
     color: #001E2B;
+}
+
+.tag-item_eslint {
+    border-color: #4a2ec4;
+    background-color: #8181f2;
 }
 
 .tag-item_express {
