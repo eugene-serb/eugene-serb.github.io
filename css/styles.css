@@ -1,4 +1,10 @@
 /* ------------------------------ */
+/* eugene-serb.github.io styles   */
+/* version:     dated 2022.07.17  */
+/* author:      Eugene Serb       */
+/* ------------------------------ */
+
+/* ------------------------------ */
 /* RESET AND BASE STYLES' TUNE UP */
 /* ------------------------------ */
 
@@ -577,10 +583,14 @@ table, th, td {
     padding: 2px 8px;
     border: 1px solid var(--color-c);
     border-radius: var(--number-border-radius);
-    background-color: var(--color-a);
+    background-color: var(--color-a-monocromatic-c);
     color: var(--color-white);
     font-weight: 500;
 }
+
+    .tag-item::selection {
+        background-color: var(--color-a-monocromatic-b);
+    }
 
 .tag-item_html { background-color: #e34c26; }
 .tag-item_css { background-color: #563d7c; }
@@ -603,9 +613,19 @@ table, th, td {
     color: #001E2B;
 }
 
+.tag-item_eslint {
+    border-color: #4a2ec4;
+    background-color: #8181f2;
+}
+
 .tag-item_express {
     background-color: #e0f5ff;
     color: var(--color-c);
+}
+
+.tag-item_react {
+    background-color: #282c34;
+    color: #61dafb;
 }
 
 .tag-item_electron {
