@@ -1,6 +1,6 @@
 /* ------------------------------ */
 /* eugene-serb.github.io styles   */
-/* version:     dated 2022.07.13  */
+/* version:     dated 2022.07.17  */
 /* author:      Eugene Serb       */
 /* ------------------------------ */
 
@@ -621,6 +621,11 @@ table, th, td {
 .tag-item_express {
     background-color: #e0f5ff;
     color: var(--color-c);
+}
+
+.tag-item_react {
+    background-color: #282c34;
+    color: #61dafb;
 }
 
 .tag-item_electron {
