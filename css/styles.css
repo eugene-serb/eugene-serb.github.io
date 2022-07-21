@@ -1,6 +1,6 @@
 /* ------------------------------ */
 /* eugene-serb.github.io styles   */
-/* version:     dated 2022.07.17  */
+/* version:     dated 2022.07.21  */
 /* author:      Eugene Serb       */
 /* ------------------------------ */
 
@@ -592,34 +592,29 @@ table, th, td {
         background-color: var(--color-a-monocromatic-b);
     }
 
-.tag-item_html { background-color: #e34c26; }
-.tag-item_css { background-color: #563d7c; }
-.tag-item_ts { background-color: #2b7489; }
-.tag-item_vue { background-color: #42b983; }
-.tag-item_node { background-color: #026e00; }
+.tag-item_html { background-color: #E34C26; }
+.tag-item_css { background-color: #563D7C; }
+.tag-item_sass { background-color: #CF649A; }
+.tag-item_ts { background-color: #2B7489; }
+.tag-item_vue { background-color: #42B983; }
+.tag-item_node { background-color: #026E00; }
 .tag-item_postgres { background-color: #336791; }
-.tag-item_npm { background-color: #cb0000; }
-.tag-item_git { background-color: #f14e32; }
+.tag-item_npm { background-color: #CB0000; }
+.tag-item_git { background-color: #F14E32; }
 .tag-item_php { background-color: #4F5D95; }
 .tag-item_c-sharp { background-color: #178600; }
-.tag-item_c-plus-plus { background-color: #f34b7d; }
+.tag-item_c-plus-plus { background-color: #f34B7D; }
 .tag-item_c-lang { background-color: #555555; }
-.tag-item_visual-basic-dotnet { background-color: #945db7; }
+.tag-item_visual-basic-dotnet { background-color: #945DB7; }
 .tag-item_python { background-color: #3572A5; }
 
-.tag-item_mongo {
-    border-color: #00684A;
-    background-color: #00ED64;
-    color: #001E2B;
+.tag-item_pascal {
+    background-color: #E3F171;
+    color: var(--color-c);
 }
 
-.tag-item_eslint {
-    border-color: #4a2ec4;
-    background-color: #8181f2;
-}
-
-.tag-item_express {
-    background-color: #e0f5ff;
+.tag-item_js {
+    background-color: #f1e05a;
     color: var(--color-c);
 }
 
@@ -633,14 +628,20 @@ table, th, td {
     color: #9feaf9;
 }
 
-.tag-item_js {
-    background-color: #f1e05a;
+.tag-item_mongo {
+    border-color: #00684A;
+    background-color: #00ED64;
+    color: #001E2B;
+}
+
+.tag-item_express {
+    background-color: #e0f5ff;
     color: var(--color-c);
 }
 
-.tag-item_pascal {
-    background-color: #E3F171;
-    color: var(--color-c);
+.tag-item_eslint {
+    border-color: #4a2ec4;
+    background-color: #8181f2;
 }
 
 /* ----- */
