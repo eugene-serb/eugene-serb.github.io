@@ -169,7 +169,7 @@ small { font-size: smaller; }
 
 span, p, article, blockquote {
     color: var(--color-text);
-    font-weight: 400;
+    font-weight: 300;
 }
 
 ul {
