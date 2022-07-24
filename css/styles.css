@@ -5,66 +5,7 @@
 /* ------------------------------ */
 
 @charset 'UTF-8';
-
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src:
-        local('Roboto'),
-        local('Roboto-Regular'),
-        url('https://eugene-serb.github.io/fonts/Roboto-Regular.eot') format('embedded-opentype'),
-        url('https://eugene-serb.github.io/fonts/Roboto-Regular.woff') format('woff'),
-        url('https://eugene-serb.github.io/fonts/Roboto-Regular.otf') format('opentype'),
-        url('https://eugene-serb.github.io/fonts/Roboto-Regular.ttf') format('truetype'),
-        url('https://eugene-serb.github.io/fonts/Roboto-Regular.svg') format('svg');
-}
-
-@font-face {
-    font-family: 'Roboto';
-    font-style: oblique;
-    font-weight: 400;
-    font-display: swap;
-    src:
-        local('Roboto'),
-        local('Roboto-Italic'),
-        url('https://eugene-serb.github.io/fonts/Roboto-Italic.eot') format('embedded-opentype'),
-        url('https://eugene-serb.github.io/fonts/Roboto-Italic.woff') format('woff'),
-        url('https://eugene-serb.github.io/fonts/Roboto-Italic.otf') format('opentype'),
-        url('https://eugene-serb.github.io/fonts/Roboto-Italic.ttf') format('truetype'),
-        url('https://eugene-serb.github.io/fonts/Roboto-Italic.svg') format('svg');
-}
-
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-    src:
-        local('Roboto'),
-        local('Roboto-Medium'),
-        url('https://eugene-serb.github.io/fonts/Roboto-Medium.eot') format('embedded-opentype'),
-        url('https://eugene-serb.github.io/fonts/Roboto-Medium.woff') format('woff'),
-        url('https://eugene-serb.github.io/fonts/Roboto-Medium.otf') format('opentype'),
-        url('https://eugene-serb.github.io/fonts/Roboto-Medium.ttf') format('truetype'),
-        url('https://eugene-serb.github.io/fonts/Roboto-Medium.svg') format('svg');
-}
-
-@font-face {
-    font-family: 'Roboto';
-    font-style: oblique;
-    font-weight: 500;
-    font-display: swap;
-    src:
-        local('Roboto'),
-        local('Roboto-MediumItalic'),
-        url('https://eugene-serb.github.io/fonts/Roboto-MediumItalic.eot') format('embedded-opentype'),
-        url('https://eugene-serb.github.io/fonts/Roboto-MediumItalic.woff') format('woff'),
-        url('https://eugene-serb.github.io/fonts/Roboto-MediumItalic.otf') format('opentype'),
-        url('https://eugene-serb.github.io/fonts/Roboto-MediumItalic.ttf') format('truetype'),
-        url('https://eugene-serb.github.io/fonts/Roboto-MediumItalic.svg') format('svg');
-}
+@import 'https://eugene-serb.github.io/css/fonts.css';
 
 /* ------------------------------ */
 /* RESET AND BASE STYLES' TUNE UP */
