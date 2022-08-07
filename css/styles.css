@@ -1,6 +1,6 @@
 /* ------------------------------ */
 /* eugene-serb.github.io styles   */
-/* version:     dated 2022.07.25  */
+/* version:     dated 2022.08.07  */
 /* author:      Eugene Serb       */
 /* ------------------------------ */
 
@@ -231,7 +231,7 @@ fieldset {
     padding: 8px;
 }
 
-button, input, textarea, select {
+button, textarea, select, input {
     padding: 4px 8px;
     border: 2px solid var(--color-link);
     border-radius: var(--number-border-radius);
@@ -258,6 +258,18 @@ option {
     option:hover {
         background-color: var(--color-selection);
         color: var(--color-white);
+    }
+
+input[type=range] {
+    margin: 8px 0;
+    padding: 0;
+    border: 0px solid var(--color-link);
+}
+
+    input[type=range]:hover {
+        margin: 8px 0;
+        padding: 0;
+        border: 0px solid var(--color-link-hover);
     }
 
 /* ------ */
