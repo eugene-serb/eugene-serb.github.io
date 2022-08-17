@@ -1,5 +1,5 @@
 # Hi all!
-Personal website in ***HTML*** with ***CSS*** **[[rep](https://github.com/eugene-serb/eugene-serb.github.io/), [site](https://eugene-serb.github.io/)]**
+Personal website in ***HTML*** and ***CSS*** **[[rep](https://github.com/eugene-serb/eugene-serb.github.io/), [site](https://eugene-serb.github.io/)]**
 
 This is a repository of my personal website that contains links and description of my projects, as well as information about my contacts, biography, skills and services.
 

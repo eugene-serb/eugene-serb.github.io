@@ -11,17 +11,8 @@
     <meta name="color-scheme" content="light dark" />
     <meta name="robots" content="all" />
 
-    <link rel="canonical" href="https://eugene-serb.github.io/" />
-    <link rel="stylesheet" type="text/css" href="https://eugene-serb.github.io/css/styles.css" />
-
-    <link rel="shortcut icon" type="image/x-icon" href="https://eugene-serb.github.io/img/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="https://eugene-serb.github.io/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="https://eugene-serb.github.io/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="https://eugene-serb.github.io/favicon-16x16.png" />
-    <link rel="manifest" href="https://eugene-serb.github.io/site.webmanifest" />
-
     <meta name="author" content="Eugene Serb" />
-    <meta name="copyright" content="Eugene Serb, 2021 — 2022" />
+    <meta name="copyright" content="Eugene Serb, 2022" />
     <meta name="publisher-email" content="eugene.serb@gmail.com" />
     <meta name="publisher-url" content="https://eugene-serb.github.io/" />
     <meta name="keywords" content="Eugene Serb, eugene-serb, eugene_serb, eugene.serb, Evgeniy Serb, Евгений Серб, Novorossiysk, Новороссийск, contacts, CV, resume, portfolio, repositories, services, coder, developer, software engineer, development, frontend, backend, fullstack, homepage" />
@@ -41,6 +32,14 @@
     <meta name="twitter:title" content="Eugene Serb — Homepage" />
     <meta name="twitter:description" content="Hi, friends! My name is Eugene Serb, and there is my personal page with my contact info, links, services, repositories and biography." />
     <meta name="twitter:image" content="https://eugene-serb.github.io/img/og.png" />
+
+    <link rel="canonical" href="https://eugene-serb.github.io/" />
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
 
     <meta name="google-site-verification" content="qLQbgnmQEfvprDF8WR6oL_b_Qt0R9kKcIEOfHqWlFm8" />
     <meta name="yandex-verification" content="e6e0bff7caaa7ecd" />
@@ -73,6 +72,25 @@
         });
     </script>
     <!-- /Yandex.Metrika counter -->
+    <style type="text/css">
+        @media only screen and (min-width: 960px) {
+            .homepage {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 64px;
+            }
+
+            .column-first {
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+            }
+
+            .column-second {
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+            }
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -83,16 +101,16 @@
             <nav class="menu-wrapper">
                 <ul class="navigation">
                     <li class="navigation__item">
-                        <a href="https://eugene-serb.github.io/" target="_self" class="navigation__link">Home</a>
+                        <a href="/" target="_self" class="navigation__link">Home</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="https://eugene-serb.github.io/#skills" target="_self" class="navigation__link">Skills</a>
+                        <a href="/#skills" target="_self" class="navigation__link">Skills</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="https://eugene-serb.github.io/services.html" target="_self" class="navigation__link">Services</a>
+                        <a href="/services.html" target="_self" class="navigation__link">Services</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="https://eugene-serb.github.io/projects.html" target="_self" class="navigation__link">Projects</a>
+                        <a href="/projects.html" target="_self" class="navigation__link">Projects</a>
                     </li>
                 </ul>
             </nav>
@@ -104,7 +122,7 @@
         <div class="homepage">
             <div class="column-first">
                 <div class="content">
-                    <img src="https://eugene-serb.github.io/img/avatar.jpg" title="Yes, that's McDonald's 😂" alt="Photo with me" class="content__image" />
+                    <img src="/img/avatar.jpg" title="Yes, that's McDonald's 😂" alt="Photo with me" class="content__image" />
                 </div>
                 <div class="content">
                     <article>
@@ -153,9 +171,12 @@
                         <div class="tag-row" translate="no">
                             <span class="tag-item tag-item_html">HTML</span>
                             <span class="tag-item tag-item_css">CSS</span>
+                            <span class="tag-item tag-item_sass">SASS</span>
                             <span class="tag-item tag-item_js">JavaScript</span>
                             <span class="tag-item tag-item_ts">TypeScript</span>
                             <span class="tag-item tag-item_vue">Vue</span>
+                            <span class="tag-item tag-item_vue">Vuex</span>
+                            <span class="tag-item tag-item_vue">Vue Router</span>
                             <span class="tag-item tag-item_react">React</span>
                             <span class="tag-item tag-item_electron">Electron</span>
                             <span class="tag-item tag-item_node">Node.js</span>
@@ -173,13 +194,10 @@
                             <span class="tag-item">CSV</span>
                             <span class="tag-item">AJAX</span>
                             <span class="tag-item">HTML Canvas</span>
+                            <span class="tag-item">Regex</span>
                             <span class="tag-item">Browser API</span>
                             <span class="tag-item">SEO</span>
                         </div>
-                    </article>
-                    <article class="content-item content-item_bordered">
-                        <h3 class="content-item__header">Other Skills</h3>
-                        <p>Building a PC, crypto-mining and trading, playing the guitar and singing, drawing people with a pencil :3</p>
                     </article>
                 </section>
             </div>
@@ -188,14 +206,14 @@
                     <h2 class="content__header">Services</h2>
                     <article class="content-item content-item_bordered">
                         <h3 class="content-item__header">Software Engineer</h3>
-                        <p>I will develop a website or program for any OS and device. I will audit and refactor your program and translate your code into other languages.</p>
+                        <p>Development of websites and applications for any OS and device. Consulting on any issues, code support, finding and fixing errors, refactoring and decomposition.</p>
                         <div class="content-link">
                             <a href="https://eugene-serb.github.io/services.html#software" target="_self" translate="no">View services</a>
                         </div>
                     </article>
                     <article class="content-item content-item_bordered">
                         <h3 class="content-item__header">Computer Technician</h3>
-                        <p>I will repair, upgrade, overclock and set up your computer, build a server or mining rig for you.</p>
+                        <p>Design and build, upgrade and overclock, maintain and repair your computer, server or mining rig.</p>
                         <div class="content-link">
                             <a href="https://eugene-serb.github.io/services.html#hardware" target="_self" translate="no">View services</a>
                         </div>
@@ -251,7 +269,7 @@
 
                     <article class="content-item content-item_bordered">
                         <h3 class="content-item__header">Portfolio</h3>
-                        <p>If you are HR-manager or technical specialist, then this is definitely for you. At the moment there are pet projects.</p>
+                        <p>If you are HR-manager or technical specialist, then this is definitely for you.</p>
                         <div class="content-link">
                             <a href="https://eugene-serb.github.io/projects.html" target="_self" translate="no">View portfolio</a>
                         </div>
