@@ -1,6 +1,6 @@
 /* ------------------------------ */
 /* eugene-serb.github.io styles   */
-/* version:     dated 2022.08.27  */
+/* version:     2022.08.29        */
 /* author:      Eugene Serb       */
 /* ------------------------------ */
 
@@ -172,8 +172,11 @@ span, p, article, blockquote {
   font-weight: 300;
 }
 
-ul {
+ol, ul {
   padding: 16px;
+}
+
+ul {
   list-style-type: circle;
 }
 
@@ -807,4 +810,3 @@ table, th, td {
   border-color: #4a2ec4;
   background-color: #8181f2;
 }
-
