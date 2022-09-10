@@ -1,6 +1,6 @@
 /* ------------------------------ */
 /* eugene-serb.github.io styles   */
-/* version:     2022.08.29        */
+/* version:     2022.09.10        */
 /* author:      Eugene Serb       */
 /* ------------------------------ */
 
@@ -142,11 +142,11 @@ body {
 }
 
 :focus {
-  border-bottom: 2px solid var(--color-selection);
+  border-bottom: var(--number-border-size) solid var(--color-selection);
 }
 
 :focus-visible {
-  outline: 2px solid var(--color-selection);
+  outline: var(--number-border-size) solid var(--color-selection);
   border-color: transparent;
 }
 
@@ -182,14 +182,14 @@ ul {
 
 a {
   background-color: transparent;
-  border-bottom: 2px solid transparent;
+  border-bottom: var(--number-border-size) solid transparent;
   font-weight: 500;
   color: var(--color-link);
   text-decoration: none;
 }
 
   a:hover {
-    border-bottom: 2px solid var(--color-link-hover);
+    border-bottom: var(--number-border-size) solid var(--color-link-hover);
     color: var(--color-link-hover);
     transition: all 0.5s ease;
     text-decoration: none;
@@ -229,14 +229,14 @@ legend {
 }
 
 fieldset {
-  border: 2px solid var(--color-fieldset-border);
+  border: var(--number-border-size) solid var(--color-fieldset-border);
   border-radius: var(--number-border-radius);
   padding: 8px;
 }
 
 button, textarea, select, input {
   padding: 4px 8px;
-  border: 2px solid var(--color-link);
+  border: var(--number-border-size) solid var(--color-link);
   border-radius: var(--number-border-radius);
   background: var(--color-background);
   color: var(--color-text);
@@ -247,7 +247,7 @@ button, textarea, select, input {
 
   button:hover, input:hover,
   textarea:hover, select:hover {
-    border: 2px solid var(--color-link-hover);
+    border: var(--number-border-size) solid var(--color-link-hover);
     transition: all 0.5s ease;
   }
 
@@ -287,7 +287,7 @@ input[type=range] {
     cursor: pointer;
     box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
     background: var(--color-a-monocromatic-a);
-    border-radius: 8px;
+    border-radius: var(--number-border-radius);
     border: 0px solid #000101;
   }
 
@@ -297,7 +297,7 @@ input[type=range] {
     height: 16px;
     margin-top: -4px;
     border: 0px solid #000000;
-    border-radius: 8px;
+    border-radius: var(--number-border-radius);
     background: var(--color-a);
     box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
     cursor: pointer;
@@ -311,7 +311,7 @@ input[type=range] {
     width: 100%;
     height: 8px;
     border: 0px solid #000101;
-    border-radius: 8px;
+    border-radius: var(--number-border-radius);
     background: var(--color-a-monocromatic-a);
     box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
     cursor: pointer;
@@ -322,7 +322,7 @@ input[type=range] {
     width: 16px;
     height: 16px;
     border: 0px solid #000000;
-    border-radius: 8px;
+    border-radius: var(--number-border-radius);
     background: var(--color-a);
     box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
     cursor: pointer;
@@ -341,14 +341,14 @@ input[type=range] {
 
   input[type=range]::-ms-fill-lower {
     border: 0px solid #000101;
-    border-radius: 8px;
+    border-radius: var(--number-border-radius);
     box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
     background: var(--color-a-monocromatic-a);
   }
 
   input[type=range]::-ms-fill-upper {
     border: 0px solid #000101;
-    border-radius: 8px;
+    border-radius: var(--number-border-radius);
     box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
     background: var(--color-a-monocromatic-a);
   }
@@ -357,7 +357,7 @@ input[type=range] {
     width: 16px;
     height: 16px;
     border: 0px solid #000000;
-    border-radius: 8px;
+    border-radius: var(--number-border-radius);
     background: var(--color-a);
     box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
     cursor: pointer;
@@ -452,11 +452,11 @@ table, th, td {
   }
 
   .header :focus {
-    border-bottom: 2px solid var(--color-header-navigation-link-hover);
+    border-bottom: var(--number-border-size) solid var(--color-header-navigation-link-hover);
   }
 
   .header :focus-visible {
-    outline: 2px solid var(--color-header-navigation-link-hover);
+    outline: var(--number-border-size) solid var(--color-header-navigation-link-hover);
     border-color: transparent;
   }
 
@@ -626,7 +626,7 @@ table, th, td {
   margin-top: 0;
   margin-bottom: 16px;
   padding-left: 16px;
-  border: 2px solid var(--color-content-borderline);
+  border: var(--number-border-size) solid var(--color-content-borderline);
   border-radius: var(--number-border-radius);
   color: var(--color-text-header);
   font-size: 1.8em;
@@ -634,7 +634,7 @@ table, th, td {
 
 .content__header_emerald {
   padding: 8px 16px;
-  border: 2px solid var(--color-content-header-colored-borderline);
+  border: var(--number-border-size) solid var(--color-content-header-colored-borderline);
   background-color: var(--color-content-header-colored);
   color: var(--color-white);
   font-size: 2.2em;
@@ -646,7 +646,7 @@ table, th, td {
 
 .content__image {
   width: 100%;
-  border: 2px solid var(--color-content-borderline);
+  border: var(--number-border-size) solid var(--color-content-borderline);
   border-radius: var(--number-border-radius);
 }
 
@@ -656,7 +656,7 @@ table, th, td {
 
 .content-item_bordered {
   padding: 16px;
-  border: 2px solid var(--color-content-item-borderline);
+  border: var(--number-border-size) solid var(--color-content-item-borderline);
   border-radius: var(--number-border-radius);
 }
 
