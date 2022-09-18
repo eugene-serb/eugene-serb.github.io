@@ -1,6 +1,6 @@
 /* ------------------------------ */
 /* eugene-serb.github.io styles   */
-/* version:     2022.09.11        */
+/* version:     2022.09.18        */
 /* author:      Eugene Serb       */
 /* ------------------------------ */
 
@@ -723,23 +723,6 @@ table, th, td {
   }
 
 /* ---- */
-/* GITS */
-/* ---- */
-
-.git-link {
-  margin-left: 4px;
-  font-size: 12px;
-}
-
-  .git-link a {
-    border-bottom: 1px solid transparent;
-  }
-
-    .git-link a:hover {
-      border-bottom: 1px solid var(--color-link-hover);
-    }
-
-/* ---- */
 /* TAGS */
 /* ---- */
 
@@ -816,3 +799,20 @@ table, th, td {
   border-color: #4a2ec4;
   background-color: #8181f2;
 }
+
+/* --------- */
+/* SIGN LINK */
+/* --------- */
+
+.sign-link {
+  margin-left: 4px;
+  font-size: 12px;
+}
+
+  .sign-link a {
+    border-bottom: 1px solid transparent;
+  }
+
+    .sign-link a:hover {
+      border-bottom: 1px solid var(--color-link-hover);
+    }
