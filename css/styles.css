@@ -1,6 +1,6 @@
 /* ------------------------------ */
 /* eugene-serb.github.io styles   */
-/* version:     2022.09.18        */
+/* version:     2022.10.09        */
 /* author:      Eugene Serb       */
 /* ------------------------------ */
 
@@ -770,18 +770,18 @@ table, th, td {
 }
 
 .tag-item_js {
-  background-color: #f1e05a;
+  background-color: #F1E05A;
   color: var(--color-c);
 }
 
 .tag-item_react {
-  background-color: #282c34;
-  color: #61dafb;
+  background-color: #282C34;
+  color: #61DAFB;
 }
 
 .tag-item_electron {
-  background-color: #2b2e3b;
-  color: #9feaf9;
+  background-color: #2B2E3B;
+  color: #9FEAF9;
 }
 
 .tag-item_mongo {
@@ -791,13 +791,22 @@ table, th, td {
 }
 
 .tag-item_express {
-  background-color: #e0f5ff;
+  background-color: #E0F5FF;
   color: var(--color-c);
 }
 
 .tag-item_eslint {
-  border-color: #4a2ec4;
-  background-color: #8181f2;
+  border-color: #4A2EC4;
+  background-color: #8181F2;
+}
+
+.tag-item_webpack {
+  background-color: #A5CEE1;
+}
+
+.tag-item_babel {
+  background-color: #F5DA55;
+  color: var(--color-c);
 }
 
 /* --------- */
