@@ -1,6 +1,6 @@
 /* ------------------------------ */
 /* eugene-serb.github.io styles   */
-/* version:     2022.10.09        */
+/* version:     2022.10.16        */
 /* author:      Eugene Serb       */
 /* ------------------------------ */
 
@@ -802,6 +802,7 @@ table, th, td {
 
 .tag-item_webpack {
   background-color: #A5CEE1;
+  color: #001E2B;
 }
 
 .tag-item_babel {
