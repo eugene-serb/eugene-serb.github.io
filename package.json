@@ -1,0 +1,29 @@
+{
+  "name": "eugene-serb.github.io",
+  "version": "1.0.3",
+  "description": "Eugene Serb Homepage",
+  "keywords": [
+    "eugene-serb",
+    "homepage",
+    "personal-website",
+    "landing-page"
+  ],
+  "license": "GNU GPL v3",
+  "private": "true",
+  "homepage": "https://github.com/eugene-serb/eugene-serb.github.io#readme",
+  "author": {
+    "name": "Eugene Serb",
+    "email": "eugene.serb@gmail.com",
+    "url": "https://eugene-serb.github.io/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eugene-serb/eugene-serb.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eugene-serb/eugene-serb.github.io/issues"
+  },
+  "scripts": {
+    "test": "exit 0"
+  }
+}
