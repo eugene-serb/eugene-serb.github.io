@@ -34,6 +34,18 @@
   cursor: default;
 }
 
+  .logo-wrapper a {
+    border-color: transparent;
+    color: var(--color-header-navigation-link);
+    cursor: pointer;
+  }
+
+    .logo-wrapper a:hover {
+      border: none;
+      border-color: var(--color-header-navigation-link-hover);
+      color: var(--color-header-navigation-link-hover);
+    }
+
 .menu-wrapper {
   margin-top: 16px;
   align-self: center;
