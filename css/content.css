@@ -1,6 +1,4 @@
-/* ---- */
-/* PAGE */
-/* ---- */
+@charset 'UTF-8';
 
 .page {
   flex-grow: 1;
@@ -15,10 +13,6 @@
   }
 }
 
-/* ---- */
-/* POST */
-/* ---- */
-
 .post {
   margin: 0 auto;
 }
@@ -27,10 +21,6 @@
   text-align: center;
   margin-block-end: 32px;
 }
-
-/* ------- */
-/* CONTENT */
-/* ------- */
 
 .content {
   margin-bottom: 32px;
