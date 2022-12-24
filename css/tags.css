@@ -127,3 +127,7 @@
 	background-color: #F5DA55;
 	color: var(--color-c);
 }
+
+.tag-item_jest {
+	background-color: #15C213;
+}
