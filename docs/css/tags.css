@@ -1,0 +1,133 @@
+@charset 'UTF-8';
+
+.tag-row {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.tag-item {
+  padding: 2px 8px;
+  border: 1px solid var(--color-c);
+  border-radius: var(--number-content-border-radius);
+  background-color: var(--color-a-monocromatic-c);
+  color: var(--color-white);
+  font-weight: 500;
+}
+
+.tag-item::selection {
+  background-color: var(--color-a-monocromatic-b);
+}
+
+.tag-item_html {
+  background-color: #e34c26;
+}
+
+.tag-item_css {
+  background-color: #563d7c;
+}
+
+.tag-item_sass {
+  background-color: #cf649a;
+}
+
+.tag-item_ts {
+  background-color: #2b7489;
+}
+
+.tag-item_vue {
+  background-color: #42b983;
+}
+
+.tag-item_node {
+  background-color: #026e00;
+}
+
+.tag-item_postgres {
+  background-color: #336791;
+}
+
+.tag-item_npm {
+  background-color: #cb0000;
+}
+
+.tag-item_git {
+  background-color: #f14e32;
+}
+
+.tag-item_php {
+  background-color: #4f5d95;
+}
+
+.tag-item_c-sharp {
+  background-color: #178600;
+}
+
+.tag-item_c-plus-plus {
+  background-color: #f34b7d;
+}
+
+.tag-item_c-lang {
+  background-color: #555555;
+}
+
+.tag-item_visual-basic-dotnet {
+  background-color: #945db7;
+}
+
+.tag-item_python {
+  background-color: #3572a5;
+}
+
+.tag-item_pascal {
+  background-color: #e3f171;
+  color: var(--color-c);
+}
+
+.tag-item_js {
+  background-color: #f1e05a;
+  color: var(--color-c);
+}
+
+.tag-item_react {
+  background-color: #282c34;
+  color: #61dafb;
+}
+
+.tag-item_electron {
+  background-color: #2b2e3b;
+  color: #9feaf9;
+}
+
+.tag-item_mongo {
+  border-color: #00684a;
+  background-color: #00ed64;
+  color: #001e2b;
+}
+
+.tag-item_express {
+  background-color: #e0f5ff;
+  color: var(--color-c);
+}
+
+.tag-item_eslint {
+  border-color: #4a2ec4;
+  background-color: #8181f2;
+}
+
+.tag-item_webpack {
+  background-color: #a5cee1;
+  color: #001e2b;
+}
+
+.tag-item_babel {
+  background-color: #f5da55;
+  color: var(--color-c);
+}
+
+.tag-item_jest {
+  background-color: #15c213;
+}
