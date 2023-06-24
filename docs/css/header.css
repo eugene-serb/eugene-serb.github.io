@@ -5,18 +5,19 @@
   background: var(--color-header-background);
 }
 
-  .header ::selection {
-    background: var(--color-header-selection);
-  }
+.header ::selection {
+  background: var(--color-header-selection);
+}
 
-  .header :focus {
-    border-bottom: var(--number-header-focus-border-size) solid var(--color-header-navigation-link-hover);
-  }
+.header :focus {
+  border-bottom: var(--number-header-focus-border-size) solid
+    var(--color-header-navigation-link-hover);
+}
 
-  .header :focus-visible {
-    outline: var(--number-header-focus-border-size) solid var(--color-header-navigation-link-hover);
-    border-color: transparent;
-  }
+.header :focus-visible {
+  outline: var(--number-header-focus-border-size) solid var(--color-header-navigation-link-hover);
+  border-color: transparent;
+}
 
 .header-wrapper {
   padding-top: 32px;
@@ -34,17 +35,17 @@
   cursor: default;
 }
 
-  .logo-wrapper a {
-    border-color: transparent;
-    color: var(--color-header-navigation-link);
-    cursor: pointer;
-  }
+.logo-wrapper a {
+  border-color: transparent;
+  color: var(--color-header-navigation-link);
+  cursor: pointer;
+}
 
-    .logo-wrapper a:hover {
-      border: none;
-      border-color: var(--color-header-navigation-link-hover);
-      color: var(--color-header-navigation-link-hover);
-    }
+.logo-wrapper a:hover {
+  border: none;
+  border-color: var(--color-header-navigation-link-hover);
+  color: var(--color-header-navigation-link-hover);
+}
 
 .menu-wrapper {
   margin-top: 16px;
@@ -66,15 +67,15 @@
   text-transform: uppercase;
 }
 
-  .navigation__item a {
-    border-color: transparent;
-    color: var(--color-header-navigation-link);
-  }
+.navigation__item a {
+  border-color: transparent;
+  color: var(--color-header-navigation-link);
+}
 
-    .navigation__item a:hover {
-      border-color: var(--color-header-navigation-link-hover);
-      color: var(--color-header-navigation-link-hover);
-    }
+.navigation__item a:hover {
+  border-color: var(--color-header-navigation-link-hover);
+  color: var(--color-header-navigation-link-hover);
+}
 
 @media only screen and (min-width: 540px) {
   .header {
