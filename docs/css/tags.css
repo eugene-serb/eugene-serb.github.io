@@ -1,7 +1,6 @@
 @charset 'UTF-8';
 
 .tag-row {
-  margin-top: 16px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
