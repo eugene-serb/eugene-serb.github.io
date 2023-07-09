@@ -38,6 +38,15 @@
   align-items: center;
 }
 
+.contacts__iconed-link > svg {
+  width: 24px;
+  height: 24px;
+}
+
 .contacts__iconed-link:hover {
   border: none;
+}
+
+.contacts__iconed-link:hover > svg > path {
+  fill: #4ecbd9;
 }
