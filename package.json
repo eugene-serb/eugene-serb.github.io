@@ -1,6 +1,6 @@
 {
   "name": "eugene-serb.github.io",
-  "version": "1.2.11",
+  "version": "1.2.12",
   "description": "Eugene Serb Homepage",
   "keywords": [
     "eugene-serb",
@@ -44,7 +44,7 @@
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.8.1",
-    "eslint": "^8.51.0",
+    "eslint": "^8.52.0",
     "eslint-cli": "^1.1.1",
     "eslint-config-prettier": "^9.0.0",
     "eslint-webpack-plugin": "^4.0.1",
