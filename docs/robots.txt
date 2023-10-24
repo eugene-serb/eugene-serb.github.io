@@ -1,9 +1,0 @@
-#
-# robots.txt at https://eugene-serb.github.io/
-#
-
-# All Bots
-User-agent: *
-Allow: /
-
-Sitemap: https://eugene-serb.github.io/sitemap.xml
