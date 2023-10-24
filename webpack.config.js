@@ -45,7 +45,7 @@ module.exports = (env, argv) => {
         patterns: [
           {
             from: path.resolve(__dirname, 'static'),
-            to: path.resolve(__dirname, 'docs'),
+            to: path.resolve(__dirname, 'build'),
           },
         ],
       }),
