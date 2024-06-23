@@ -25,12 +25,12 @@ This is a repository of my personal website that contains links and description 
 
 ## Commands:
 
-- npm run start — run with watcher
-- npm run dev — run dev server
-- npm run build — build in production mode,
-- npm run build:dev — build in development mode,
-- npm run lint — run lint check,
-- npm run lint:fix — run lint fix,
-- npm run format — run prettier check,
-- npm run format:fix — run prettier fix,
-- npm run test — run tests
+- `npm run start` — run with watcher
+- `npm run dev` — run dev server
+- `npm run build` — run build in production mode
+- `npm run build:dev` — run build in development mode
+- `npm run lint` — run lint check
+- `npm run lint:fix` — run lint fix
+- `npm run format` — run prettier check
+- `npm run format:fix` — run prettier fix
+- `npm run test` — run tests
