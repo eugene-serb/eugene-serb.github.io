@@ -36,6 +36,8 @@
   border: none;
   display: flex;
   align-items: center;
+  width: 24px;
+  height: 24px;
 }
 
 .contacts__iconed-link > svg {

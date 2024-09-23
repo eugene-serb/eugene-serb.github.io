@@ -2,11 +2,11 @@
 
 .header {
   border-bottom: 8px solid var(--color-header-borderline);
-  background: var(--color-header-background);
+  background-color: var(--color-header-background);
 }
 
 .header ::selection {
-  background: var(--color-header-selection);
+  background-color: var(--color-header-selection);
 }
 
 .header :focus {
@@ -80,7 +80,7 @@
 @media only screen and (min-width: 540px) {
   .header {
     border-bottom: 32px solid var(--color-header-borderline);
-    background: var(--color-header-background);
+    background-color: var(--color-header-background);
   }
 
   .header-wrapper {
