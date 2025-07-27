@@ -1,6 +1,6 @@
 {
   "name": "eugene-serb.github.io",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "Eugene Serb — Homepage",
   "keywords": [
     "eugene-serb",
@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/eugene-serb/eugene-serb.github.io/issues"
   },
-  "private": "true",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "start": "webpack --mode development --watch",
