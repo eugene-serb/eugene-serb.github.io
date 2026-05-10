@@ -66,6 +66,11 @@
   margin-bottom: 16px;
 }
 
+.content-item__big-link {
+  margin: 0;
+  font-size: 1.17em;
+}
+
 .content-link {
   margin-top: 16px;
   display: flex;
