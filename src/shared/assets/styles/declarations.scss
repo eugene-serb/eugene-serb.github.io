@@ -1,0 +1,86 @@
+@charset 'UTF-8';
+
+:root {
+  --number-border-radius: 8px;
+  --number-border-size: 2px;
+
+  --font-base: 16px;
+
+  --h1-size: 2rem; /* 32px */
+  --h2-size: 1.5rem; /* 24px */
+  --h3-size: 1.25rem; /* 20px */
+  --h4-size: 1.125rem; /* 18px */
+  --h5-size: 1rem; /* 16px */
+  --h6-size: 0.875rem; /* 14px */
+
+  --space-2xl: 2rem; /* 32px */
+  --space-xl: 1.5rem; /* 24px */
+  --space-lg: 1rem; /* 16px */
+  --space-md: 0.75rem; /* 12px */
+  --space-sm: 0.5rem; /* 8px */
+  --space-xs: 0.25rem; /* 4px */
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-white: #ffffff;
+    --color-bg: #f9fafb;
+    --color-surface: #ffffff;
+    --color-border: #e5e7eb;
+
+    --color-text-primary: #111827;
+    --color-text-secondary: #374151;
+    --color-text-tertiary: #6b7280;
+    --color-text-disabled: #9ca3af;
+
+    --color-primary: #2563eb;
+    --color-primary-hover: #1d4ed8;
+    --color-primary-active: #1e40af;
+    --color-primary-light: #dbeafe;
+
+    --color-success: #10b981;
+    --color-success-bg: #d1fae5;
+    --color-danger: #ef4444;
+    --color-danger-bg: #fee2e2;
+    --color-warning: #f59e0b;
+    --color-warning-bg: #fef3c7;
+    --color-info: #3b82f6;
+    --color-info-bg: #dbeafe;
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-white: #ffffff;
+    --color-bg: #0f1117;
+    --color-surface: #1a1d27;
+    --color-border: #2d3342;
+
+    --color-text-primary: #f1f3f9;
+    --color-text-secondary: #c8cedb;
+    --color-text-tertiary: #8f96a8;
+    --color-text-disabled: #5a6278;
+
+    --color-primary: #3b82f6;
+    --color-primary-hover: #60a5fa;
+    --color-primary-active: #2563eb;
+    --color-primary-light: #1e293b;
+
+    --color-success: #34d399;
+    --color-success-bg: #064e3b;
+    --color-danger: #f87171;
+    --color-danger-bg: #7f1d1d;
+    --color-warning: #fbbf24;
+    --color-warning-bg: #78350f;
+    --color-info: #60a5fa;
+    --color-info-bg: #1e293b;
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+    --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+}
