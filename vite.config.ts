@@ -115,7 +115,10 @@ export default defineConfig({
         dir: OUTPUT_DIR,
         entryFileNames: '[name].js',
         assetFileNames: 'assets/[name]-[hash][extname]',
-        chunkFileNames: 'chunks/[name]-[hash].js',
+        chunkFileNames: (chunkInfo) => {
+          const name = chunkInfo.name.replace(/^_/, '');
+          return `chunks/${name}-[hash].js`;
+        },
       },
     },
   },
