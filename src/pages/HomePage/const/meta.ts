@@ -51,4 +51,12 @@ export const personSchema = {
   jobTitle: 'Senior Software Developer',
   url: 'https://eugene-serb.github.io/',
   email: 'mailto:eugene.serb@gmail.com',
+  sameAs: [
+    'https://github.com/eugene-serb',
+    'https://www.npmjs.com/~eugene-serb',
+    'https://www.linkedin.com/in/eugene-serb/',
+    'https://t.me/eugene_serb',
+    'https://x.com/EugeneSerb',
+    'https://vk.ru/eugene.serb',
+  ],
 };
