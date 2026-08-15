@@ -1,0 +1,45 @@
+@charset 'UTF-8';
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: var(--color-primary-light);
+}
+
+:focus-visible {
+  outline: var(--number-border-size) solid var(--color-primary-hover);
+  border-color: transparent;
+}
+
+html {
+  direction: ltr;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.382em;
+}
+
+body {
+  overflow-y: scroll;
+  background-color: var(--color-bg);
+  color: var(--color-text-secondary);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+
+  &:hover {
+    color: var(--color-primary-hover);
+    text-decoration: underline;
+  }
+
+  &:active {
+    text-decoration: underline;
+  }
+}

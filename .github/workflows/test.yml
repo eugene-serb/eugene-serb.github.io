@@ -10,6 +10,9 @@ on:
       - dev
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   test:
     strategy:
@@ -32,4 +35,4 @@ jobs:
       - name: Install and Test
         run: |
           npm ci
-          npm run test
+          npm run test:unit
