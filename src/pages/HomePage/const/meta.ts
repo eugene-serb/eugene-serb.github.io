@@ -47,7 +47,10 @@ export const metaHomePage: UseHeadInput<MergeHead> = {
 export const personSchema = {
   '@context': 'https://schema.org',
   '@type': 'Person',
-  name: 'Eugene Serb',
+  name: [
+    { '@value': 'Eugene Serb', '@language': 'en' },
+    { '@value': 'Евгений Серб', '@language': 'ru' },
+  ],
   jobTitle: 'Senior Software Developer',
   url: 'https://eugene-serb.github.io/',
   email: 'mailto:eugene.serb@gmail.com',
