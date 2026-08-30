@@ -15,14 +15,14 @@ useHeadSafe({
 </script>
 
 <template>
-  <div :class="$style.page">
-    <h1 class="visually-hidden">Eugene Serb — Homepage</h1>
+  <main :class="$style.page">
+    <h1 class="visually-hidden">{{ $t('pages.HomePage.H1') }}</h1>
 
     <div :class="$style.wrapper">
       <HeroBlock />
       <LinkButtons />
     </div>
-  </div>
+  </main>
 </template>
 
 <style module lang="scss">
@@ -34,8 +34,6 @@ useHeadSafe({
   justify-content: flex-start;
   align-items: center;
   gap: 32px;
-
-  margin-top: 32px;
 }
 
 .wrapper {

@@ -8,7 +8,7 @@ import { LinkButton } from './ui';
 </script>
 
 <template>
-  <div :class="$style.buttons" data-id="link-buttons">
+  <section :class="$style.buttons" data-id="link-buttons">
     <LinkButton link="https://t.me/eugene_serb">
       <template #icon>
         <TelegramIcon :class="$style.telegramIcon" />
@@ -39,7 +39,7 @@ import { LinkButton } from './ui';
       </template>
       <template #default>Wavelovers</template>
     </LinkButton>
-  </div>
+  </section>
 </template>
 
 <style module lang="scss">
@@ -55,31 +55,27 @@ import { LinkButton } from './ui';
 
 .linkedinIcon {
   width: 100%;
-  color: #0a66c2;
+  color: var(--color-linkedin);
 }
 
 .telegramIcon {
   width: 100%;
-  color: #29a9eb;
+  color: var(--color-telegram);
 }
 
 .npmIcon {
   width: 100%;
-  color: #cb3837;
+  color: var(--color-npm);
 }
 
 .githubIcon {
   width: 100%;
-  color: #1f2328;
-
-  @media (prefers-color-scheme: dark) {
-    color: #f0f6fc;
-  }
+  color: var(--color-github);
 }
 
 .waveloversIcon {
   width: 100%;
-  color: #aa8dd8;
+  color: var(--color-wavelovers);
   padding: 4px;
 }
 </style>

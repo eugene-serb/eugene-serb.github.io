@@ -7,16 +7,21 @@ const currentYear = computed<number>(() => new Date().getFullYear());
 </script>
 
 <template>
-  <div :class="$style.footer" data-id="footer-block">
+  <footer :class="$style.footer" data-id="footer-block">
     <span
       >© {{ currentYear }}
-      <RouterLink :to="ROUTES.homepage.path" target="_self" translate="no">Eugene Serb</RouterLink>.
-      Content licensed under
+      <RouterLink :to="ROUTES.homepage.path" target="_self" translate="no">{{
+        $t('widgets.Footer.name')
+      }}</RouterLink
+      >.
+      {{ $t('widgets.Footer.license') }}
     </span>
-    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"
+      >CC&nbsp;BY&#8209;NC&#8209;ND&nbsp;4.0</a
+    >
     <br />
-    <span class="annotation__text">This site does not track you or&nbsp;collect any data.</span>
-  </div>
+    <span class="annotation__text">{{ $t('widgets.Footer.analytics') }}</span>
+  </footer>
 </template>
 
 <style module lang="scss">
