@@ -3,14 +3,14 @@ import AvatarImgSrc from '@/shared/assets/images/avatar.jpg';
 </script>
 
 <template>
-  <div :class="$style.hero" data-id="hero-block">
+  <section :class="$style.hero" data-id="hero-block">
     <img :src="AvatarImgSrc" :class="$style.avatar" />
 
     <div :class="$style.bio">
-      <h2 :class="$style.bio__name">Eugene Serb</h2>
-      <h3 :class="$style.bio__description">Senior Software Engineer</h3>
+      <h2 :class="$style.bio__name">{{ $t('widgets.HeroBlock.name') }}</h2>
+      <h3 :class="$style.bio__description">{{ $t('widgets.HeroBlock.description') }}</h3>
     </div>
-  </div>
+  </section>
 </template>
 
 <style module lang="scss">

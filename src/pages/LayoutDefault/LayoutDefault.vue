@@ -1,11 +1,14 @@
 <script setup lang="ts">
-import { FooterBlock } from '@/widgets';
+import { FooterBlock, HeaderBlock } from '@/widgets';
 import { RouterView } from 'vue-router';
 </script>
 
 <template>
   <div :class="$style.layout">
-    <RouterView />
+    <div :class="$style.top">
+      <HeaderBlock />
+      <RouterView />
+    </div>
     <FooterBlock />
   </div>
 </template>
@@ -24,5 +27,15 @@ import { RouterView } from 'vue-router';
   justify-content: space-between;
   align-items: flex-start;
   gap: 64px;
+}
+
+.top {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4px;
 }
 </style>

@@ -1,0 +1,19 @@
+{
+  "pages": {
+    "HomePage": {
+      "H1": "Eugene Serb — Homepage",
+      "meta": {}
+    }
+  },
+  "widgets": {
+    "HeroBlock": {
+      "name": "Eugene Serb",
+      "description": "Senior Software Engineer"
+    },
+    "Footer": {
+      "name": "Eugene Serb",
+      "license": "Content licensed under ",
+      "analytics": "This site does not track you or\u00A0collect any data."
+    }
+  }
+}

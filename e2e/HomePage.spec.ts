@@ -4,6 +4,9 @@ import { describe } from 'node:test';
 describe('HomePage', () => {
   test('all widgets are visible', async ({ page }) => {
     await page.goto('/');
+
+    await expect(page.locator('[data-id="header-block"]')).toBeVisible();
+    await expect(page.locator('[data-id="header-block"]')).toHaveScreenshot('header-block.png');
     await expect(page.locator('[data-id="hero-block"]')).toBeVisible();
     await expect(page.locator('[data-id="hero-block"]')).toHaveScreenshot('hero-block.png');
     await expect(page.locator('[data-id="link-buttons"]')).toBeVisible();
