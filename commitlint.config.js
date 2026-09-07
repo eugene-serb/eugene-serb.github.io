@@ -25,7 +25,7 @@ export default {
     'scope-min-length': [2, 'always', 3],
     'subject-min-length': [2, 'always', 10],
     'subject-case': [2, 'always', 'sentence-case'],
-    'body-max-line-length': [0, 'always', 200],
-    'footer-max-line-length': [0, 'always', 200],
+    'body-max-line-length': [0, 'always', 300],
+    'footer-max-line-length': [0, 'always', 300],
   },
 };
