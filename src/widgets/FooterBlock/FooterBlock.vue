@@ -16,7 +16,7 @@ const currentYear = computed<number>(() => new Date().getFullYear());
       >.
       {{ $t('widgets.Footer.license') }}
     </span>
-    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener"
       >CC&nbsp;BY&#8209;NC&#8209;ND&nbsp;4.0</a
     >
     <br />
