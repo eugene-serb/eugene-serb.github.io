@@ -1,7 +1,7 @@
 import { fileURLToPath, URL } from 'node:url';
 import { resolve } from 'node:path';
 
-import { defineConfig } from 'vite';
+import { defineConfig, PluginOption } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import vueDevTools from 'vite-plugin-vue-devtools';
 import svgLoader from 'vite-svg-loader';
@@ -11,18 +11,16 @@ const ROOT = resolve(import.meta.dirname, 'src/entries');
 const PUBLIC_DIR = resolve(import.meta.dirname, 'public');
 const OUTPUT_DIR = resolve(import.meta.dirname, 'dist');
 
-// https://vite.dev/config/
-export default defineConfig({
-  plugins: [
+export default defineConfig(({ mode }) => {
+  const plugins: PluginOption[] = [
     vue(),
-    vueDevTools(),
     svgLoader(),
     VitePWA({
       registerType: 'autoUpdate',
       injectRegister: 'auto',
       filename: 'sw.js',
       devOptions: {
-        enabled: true,
+        enabled: false,
       },
       manifest: {
         name: 'eugene-serb.github.io',
@@ -94,35 +92,43 @@ export default defineConfig({
         ],
       },
     }),
-  ],
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
-    },
-  },
-  root: ROOT,
-  publicDir: PUBLIC_DIR,
-  build: {
-    outDir: OUTPUT_DIR,
-    emptyOutDir: true,
-    copyPublicDir: true,
-    rolldownOptions: {
-      input: {
-        index: resolve(ROOT, 'index.html'),
+  ];
+
+  if (mode === 'development') {
+    plugins.push(vueDevTools());
+  }
+
+  return {
+    plugins,
+    resolve: {
+      alias: {
+        '@': fileURLToPath(new URL('./src', import.meta.url)),
       },
-      output: {
-        format: 'es',
-        dir: OUTPUT_DIR,
-        entryFileNames: '[name].js',
-        assetFileNames: 'assets/[name]-[hash][extname]',
-        chunkFileNames: (chunkInfo) => {
-          const name = chunkInfo.name.replace(/^_/, '');
-          return `chunks/${name}-[hash].js`;
+    },
+    root: ROOT,
+    publicDir: PUBLIC_DIR,
+    build: {
+      outDir: OUTPUT_DIR,
+      emptyOutDir: true,
+      copyPublicDir: true,
+      rolldownOptions: {
+        input: {
+          index: resolve(ROOT, 'index.html'),
+        },
+        output: {
+          format: 'es',
+          dir: OUTPUT_DIR,
+          entryFileNames: '[name].js',
+          assetFileNames: 'assets/[name]-[hash][extname]',
+          chunkFileNames: (chunkInfo) => {
+            const name = chunkInfo.name.replace(/^_/, '');
+            return `chunks/${name}-[hash].js`;
+          },
         },
       },
     },
-  },
-  server: {
-    port: 5173,
-  },
+    server: {
+      port: 5173,
+    },
+  };
 });
