@@ -4,7 +4,7 @@ import AvatarImgSrc from '@/shared/assets/images/avatar.jpg';
 
 <template>
   <section :class="$style.hero" data-id="hero-block">
-    <img :src="AvatarImgSrc" :class="$style.avatar" />
+    <img :src="AvatarImgSrc" alt="" :class="$style.avatar" />
 
     <div :class="$style.bio">
       <h2 :class="$style.bio__name">{{ $t('widgets.HeroBlock.name') }}</h2>
