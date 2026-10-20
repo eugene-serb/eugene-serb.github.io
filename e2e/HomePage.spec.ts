@@ -1,7 +1,6 @@
 import { test, expect } from '@playwright/test';
-import { describe } from 'node:test';
 
-describe('HomePage', () => {
+test.describe('HomePage', () => {
   test('all widgets are visible', async ({ page }) => {
     await page.goto('/');
 
