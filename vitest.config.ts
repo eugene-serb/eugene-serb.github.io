@@ -4,7 +4,7 @@ import viteConfig from './vite.config';
 
 export default mergeConfig(
   viteConfig({
-    mode: 'development',
+    mode: 'unit-test',
     command: 'serve',
   }),
   defineConfig({
