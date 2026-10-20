@@ -5,7 +5,7 @@ defineProps<{
 </script>
 
 <template>
-  <a :href="link" target="_blank" :class="$style.button">
+  <a :href="link" target="_blank" rel="noopener" :class="$style.button">
     <div :class="$style.button__wrapper">
       <div :class="$style.button__iconWrapper">
         <slot name="icon" />

@@ -77,7 +77,7 @@ export function useTheme() {
 
   const darkModeMedia = window.matchMedia('(prefers-color-scheme: dark)');
 
-  function handleThemeChange(event: MediaQueryListEvent) {
+  function handleThemeChange(event: MediaQueryListEvent | MediaQueryList) {
     if (event.matches) {
       preferredTheme.value = Theme.DARK;
     } else {
@@ -86,6 +86,8 @@ export function useTheme() {
   }
 
   onMounted(() => {
+    handleThemeChange(darkModeMedia);
+
     currentTheme.value = getThemeFromLocalStorage();
     setThemeToLocalStorage(currentTheme.value);
 

@@ -33,11 +33,11 @@ export function useLocale(locale: Ref<string>) {
 
       const locale = JSON.parse(raw);
 
-      if (!ALLOWED_LOCALES.includes(locale)) {
+      if (!locale || typeof locale !== 'string' || !ALLOWED_LOCALES.includes(locale)) {
         return Locale.EN;
       }
 
-      return locale;
+      return locale as Locale;
     } catch {
       return Locale.EN;
     }
