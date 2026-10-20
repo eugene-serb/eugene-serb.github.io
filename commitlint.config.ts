@@ -16,7 +16,7 @@ export default {
         'perf',
         'refactor',
         'style',
-        'tests',
+        'test',
         'revert',
         'build',
       ],
