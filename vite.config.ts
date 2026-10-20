@@ -118,7 +118,7 @@ export default defineConfig(({ mode }) => {
         output: {
           format: 'es',
           dir: OUTPUT_DIR,
-          entryFileNames: '[name].js',
+          entryFileNames: '[name]-[hash].js',
           assetFileNames: 'assets/[name]-[hash][extname]',
           chunkFileNames: (chunkInfo) => {
             const name = chunkInfo.name.replace(/^_/, '');
