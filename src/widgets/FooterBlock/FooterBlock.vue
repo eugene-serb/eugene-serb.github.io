@@ -12,8 +12,7 @@ const currentYear = computed<number>(() => new Date().getFullYear());
       >© {{ currentYear }}
       <RouterLink :to="ROUTES.homepage.path" target="_self" translate="no">{{
         $t('widgets.Footer.name')
-      }}</RouterLink
-      >.
+      }}</RouterLink>.
       {{ $t('widgets.Footer.license') }}
     </span>
     <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener"
